@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<br><br><br>
+<h2>بازی هنوز شروع نشده است</h2>
+<div>
+<%@game.number_of_players %>
+</div>
+<table class="responstable">
+  <tbody>
+
+  <tr>
+    <th>شرکت کنندگان</th>
+
+  </tr>
+  <% @players.each do |player| %>
+
+      <tr>
+        <td><%= player.username %></td>
+      </tr>
+  <% end %>
+
+  </tbody>
+</table>
+<br>
+<%= link_to "<button> ایجاد بازی جدید </button>".html_safe , new_game_path ,:id => "button_id" %>
+
+<%= render 'join'%>

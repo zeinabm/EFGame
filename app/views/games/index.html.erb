@@ -1,0 +1,28 @@
+<br><br><br>
+
+<h1>لیست بازی ها</h1>
+
+<table class="responstable">
+  <tbody>
+
+  <tr>
+    <th>شماره بازی</th>
+    <th>ایجاد کننده</th>
+    <th>تعداد بازکنان</th>
+    <th>تعداد دورها</th>
+  </tr>
+  <% @games.each do |game| %>
+
+      <tr>
+        <td><%=link_to game.id, game  %></td>
+        <td><%= game.creater.username %></td>
+        <td><%= game.number_of_players %></td>
+        <td><%= game.number_of_rounds %></td>
+      </tr>
+  <% end %>
+
+  </tbody>
+</table>
+<br>
+<%= link_to "<button> ایجاد بازی جدید </button>".html_safe , new_game_path ,:id => "button_id" %>
+

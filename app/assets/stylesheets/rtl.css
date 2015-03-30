@@ -1,0 +1,34 @@
+@font-face{font-family:'yekan';src:url('/assets/BYekan.eot'),url('/assets/BYekan.woff'),url('/assets/BYekan.ttf');}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-family: 'yekan';
+}
+
+body,
+input,
+button,
+select,
+textarea,
+p,
+.navbar-search .search-query {
+	font-family: 'yekan' ;
+}
+
+
+.example-dropdown .dropdown-menu {
+  display: block;
+  position: static;
+  margin-bottom: 20px;
+}
+
+.example-container > p > .btn {
+  margin: 5px 0;
+}

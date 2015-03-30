@@ -1,0 +1,65 @@
+
+
+<section class="container" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+         xmlns="http://www.w3.org/1999/html">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-4 col-md-offset-8">
+      <!--<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4"> center-->
+
+      <div class="panel-heading">
+        <h1>اطلاعات کاربر</h1></br>
+      </div>
+
+
+
+
+      <%= form_for current_user, url: {action: "edit"}, html: {class: "form-horizontal"} do |f| %>
+          <div class="row form-group">
+
+            <div class=" col-xs-6 col-sm-6 col-md-6">
+              <%= f.label :lastname %>
+              <%= f.text_field :lastname, class: "form-control" %>
+            </div>
+            <div class=" col-xs-6 col-sm-6 col-md-6">
+              <%= f.label :name %>
+              <%= f.text_field :name, class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <%= f.label :username %>
+            <%= f.text_field :username, autocomplete: "off", class: "form-control" %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email %>
+            <%= f.email_field :email, autofocus: true, class: "form-control" %>
+          </div>
+          <div class="row form-group">
+            <div class=" col-xs-6 col-sm-6 col-md-6">
+              <%= f.label :password_confirmation %>
+              <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+            </div>
+            <div class=" col-xs-6 col-sm-6 col-md-6">
+              <%= f.label :password %>
+              <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+            </div>
+          </div>
+          <div class="form-group">
+            <%= f.label "تاریخ تولد", :style=>"width:15%" %>
+            <div class="outer-inline">
+              <%= f.select :birth_day, options_for_select((1..30).step(1)),{:include_blank => true, :prompt=>'روز'}, {:class=>"form-control fullwidth"} %></div>
+            <div class="outer-inline">
+              <%= f.select :birth_month, options_for_select((1..12).step(1)), {:include_blank => true, :prompt=>'ماه'},{:class=>"form-control fullwidth"}  %></div>
+            <div class="outer-inline">
+              <%= f.select :birth_year, options_for_select((1300..1386).step(1)),{:prompt=>'سال'}, {:class=>"form-control fullwidth"}  %> </div>
+          </div>
+
+          <p><%= captcha_tag %></p>
+          <p><%= text_field_tag :captcha %></p>
+          <div class="actions">
+            <%= f.submit "اعمال تغییرات", class: "btn btn-info btn-block " %>
+          </div>
+      <% end %>
+
+    </div>
+  </div>
+</section>
