@@ -1,28 +1,47 @@
 <br><br><br>
 
-<h1>لیست بازی ها</h1>
 
-<table class="responstable">
-  <tbody>
+        <!-- One -->
+<section class="wrapper style2 container special-alt">
+  <div class="row 50%">
+      <div class="8u 12u(narrower)">
 
-  <tr>
-    <th>شماره بازی</th>
-    <th>ایجاد کننده</th>
-    <th>تعداد بازکنان</th>
-    <th>تعداد دورها</th>
-  </tr>
-  <% @games.each do |game| %>
+        <header>
+            <h2>لیست بازی ها</h2>
+        </header>
+        <table class="responstable">
+          <tbody>
 
-      <tr>
-        <td><%=link_to game.id, game  %></td>
-        <td><%= game.creater.username %></td>
-        <td><%= game.number_of_players %></td>
-        <td><%= game.number_of_rounds %></td>
-      </tr>
-  <% end %>
+          <tr>
+            <th>شماره بازی</th>
+            <th>ایجاد کننده</th>
+            <th>تعداد بازکنان</th>
+            <th>تعداد دورها</th>
+          </tr>
+          <% @games.each do |game| %>
 
-  </tbody>
-</table>
-<br>
-<%= link_to "<button> ایجاد بازی جدید </button>".html_safe , new_game_path ,:id => "button_id" %>
+              <tr>
+                <td><%=link_to game.id, game  %></td>
+                <td><%= game.creater.username %></td>
+                <td><%= game.number_of_players %></td>
+                <td><%= game.number_of_rounds %></td>
+              </tr>
+          <% end %>
+
+          </tbody>
+        </table>
+        <br>
+        <footer>
+          <ul class="buttons">
+            <li><a href="/games/new" class="button">بازی جدید</a></li>
+          </ul>
+        </footer>
+
+      </div>
+      <div class="4u 12u(narrower) important(narrower)"> </div>
+  </div>
+</section>
+
+
+
 

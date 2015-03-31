@@ -8,45 +8,52 @@
 </head>
 
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<!-- Header -->
+      <header id="head" class="reveal">
+        <h1 id="logo"><a href="index.html">اسم فامیل<span>یه بازیه هیجان انگیز</span></a></h1>
+        <nav id="nav">
+          <ul>   
+            <li><% if user_signed_in? %>
+                        <%= link_to "خروج", destroy_user_session_path, :method => :delete %>
+                  
+                <% end %>
+              </li>
+            <li><a href="../../games">خانه</a></li>
+            <li><a href="../../games">بازی ها</a></li>
+              <li class="button special">
+                <% if user_signed_in? %>
+                      <a href="../../users/edit"><%= current_user.name%></a>
+                  <% else %>
+                      <a href="../../users/sign_in">ورود</a>
+
+                <% end %>
+              </li>
+                        
+            
+
+          </ul>
+        </nav>
+      </header>
 <%= yield %>
 
-<div class="navbar navbar-inverse navbar-fixed-top ">
-<div class="navbar navbar-inverse navbar-fixed-top colour">
-  <div class="container ">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"></a>
-    </div>
-    <div class="navbar-collapse collapse alignment" >
-      <ul class="nav navbar-nav colour">
-        <li class="active"><a href="../../profiles/show">خانه</a></li>
-        <li><a href="../../games">بازی ها</a></li>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<!---footer-->
+<footer id="footer">
 
-      </ul>
-    </div><!--/.nav-collapse -->
+        <ul class="icons">
+          <li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+          <li><a href="https://github.com/zeinabm/EFGame" class="icon circle fa-github"><span class="label">Github</span></a></li>
+          <li><a href="https://Trello.com" class="icon circle fa-github"><span class="label">Trello</span></a></li>
+        </ul>
 
-    <li class="name">
-      <% if user_signed_in? %>
-          <a href="../../users/edit"><%= current_user.name%></a>
-      <% else %>
-          <a href="../../users/sign_in">ورود</a>
+        <ul class="copyright">
+          <li>&copy; آزمایشگاه نرم افزار</li><li>طراحی: <a href="http://html5up.net">گروه شماره ۵</a></li>
+        </ul>
 
-    <% end %>
-    </li>
+</footer>
 
-    <% if user_signed_in? %>
-        <div class ="khoruj">
-          <%= link_to "خروج", destroy_user_session_path, :method => :delete %>
-        </div>
-    <% end %>
-  </div>
-</div>
-</div>
 </body>
 </html>

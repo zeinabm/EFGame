@@ -1,27 +1,55 @@
 <p id="notice"><%= notice %></p>
 
+
+    <header class="special container">
+      <span class="icon fa-tablet"></span>
+      <h2>نمایش <strong>اطلاعات بازی</strong></h2>
+        
+    </header>
 <br><br><br>
-<h2>بازی هنوز شروع نشده است</h2>
-<div>
-<%@game.number_of_players %>
-</div>
-<table class="responstable">
-  <tbody>
+<section class="wrapper style2 container special-alt">
+            <div class="row 50%">
+              <div class="8u 12u(narrower)">
 
-  <tr>
-    <th>شرکت کنندگان</th>
+                <header>
+                  <h2>بازی هنوز شروع نشده است</h2>
+                </header>
 
-  </tr>
-  <% @players.each do |player| %>
 
-      <tr>
-        <td><%= player.username %></td>
-      </tr>
-  <% end %>
+                <div>
+                    <%@game.number_of_players %>
+                </div>
+                <table class="responstable">
+                  <tbody>
 
-  </tbody>
-</table>
+                <tr>
+                  <th>شرکت کنندگان</th>
+
+                </tr>
+                <% @players.each do |player| %>
+
+                    <tr>
+                      <td><%= player.username %></td>
+                    </tr>
+                <% end %>
+
+                </tbody>
+              </table>
 <br>
-<%= link_to "<button> ایجاد بازی جدید </button>".html_safe , new_game_path ,:id => "button_id" %>
+                <footer>
+                  <ul class="buttons">
+                    <li><a href="/games/new" class="button">بازی جدید</a></li>
+                  </ul>
+                </footer>
 
-<%= render 'join'%>
+
+                <%= render 'join'%>
+                </div>
+                  <div class="4u 12u(narrower) important(narrower)">
+
+                
+
+              </div>
+            </div>
+          </section>
+
