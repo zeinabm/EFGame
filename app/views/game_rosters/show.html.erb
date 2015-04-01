@@ -7,8 +7,22 @@
 
 <p>
   <strong>Player:</strong>
-  <%= @game_roster.player_id %>
+  <%= @game_roster.player.username %>
 </p>
+<table class="table table-bordered">
+    <tbody>
+		<thead>
+			<% @items.each do |item| %>
+			<td><%= item.name %> </td>
+			<% end %>
+		</thead>
+        <tr>
+			<% @items.each do |item| %>
+			<td style=" padding:0;"><input type="text" class="form-control no-border" /></td>
+			<% end %>
+        </tr>
+    </tbody>
++</table>
 
 <%= link_to 'Edit', edit_game_roster_path(@game_roster) %> |
 <%= link_to 'Back', game_rosters_path %>

@@ -9,6 +9,7 @@ class GameRostersController < ApplicationController
   end
 
   def show
+    @items = Item.all
     respond_with(@game_roster)
   end
 
@@ -30,7 +31,12 @@ class GameRostersController < ApplicationController
       current_user.game_rosters << @game_roster
       flash[:notice] = 'GameRoster was successfully created.' if @game_roster.save
       #respond_with(@game_roster)
-      redirect_to @game
+      if game_is_starting?
+        flash[:notice] = 'بازی شروع شده است.'
+        redirect_to @game_roster
+      else
+        redirect_to @game
+      end
     end
   end
 
@@ -45,6 +51,9 @@ class GameRostersController < ApplicationController
   end
   
   private
+    def game_is_starting?
+      return @game.players.count >= @game.number_of_players
+    end
     def game_is_full?
       return @game.players.count > @game.number_of_players
     end

@@ -28,9 +28,13 @@ class GamesController < ApplicationController
       game_roster = GameRoster.new(:player_id => current_user.id, :game_id => @game.id)
       game_roster.save
     end
-    #@game.players << current_user
     flash[:notice] = 'Game was successfully created.' if @game.save
+    if game_has_started?
+      flash[:notice] = 'بازی شروع شده است.'
+      redirect_to game_roster
+    else
       respond_with(@game)
+    end
   end
 
 
@@ -47,6 +51,9 @@ class GamesController < ApplicationController
   end
 
   private
+    def game_has_started?
+      return @game.players.count >= @game.number_of_players
+    end
     def set_game
       @game = Game.find(params[:id])
     end
