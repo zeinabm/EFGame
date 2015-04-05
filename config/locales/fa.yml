@@ -1,0 +1,366 @@
+fa:
+  date:
+    abbr_day_names:
+    - ی
+    - د
+    - س
+    - چ
+    - پ
+    - ج
+    - ش
+    abbr_month_names:
+    -
+    - ژانویه
+    - فوریه
+    - مارس
+    - آوریل
+    - مه
+    - ژوئن
+    - ژوئیه
+    - اوت
+    - سپتامبر
+    - اکتبر
+    - نوامبر
+    - دسامبر
+    day_names:
+    - یکشنبه
+    - دوشنبه
+    - سه‌شنبه
+    - چهارشنبه
+    - پنج‌شنبه
+    - جمعه
+    - شنبه
+    formats:
+      default: ! '%Y/%m/%d'
+      long: ! '%e %B %Y'
+      short: ! '%m/%d'
+    month_names:
+    -
+    - ژانویه
+    - فوریه
+    - مارس
+    - آوریل
+    - مه
+    - ژوئن
+    - ژوئیه
+    - اوت
+    - سپتامبر
+    - اکتبر
+    - نوامبر
+    - دسامبر
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: حدود یک ساعت
+        other: حدود %{count} ساعت
+      about_x_months:
+        one: حدود یک ماه
+        other: حدود %{count} ماه
+      about_x_years:
+        one: حدود یک سال
+        other: حدود %{count} سال
+      almost_x_years:
+        one: حدود یک سال
+        other: حدود %{count} سال
+      half_a_minute: نیم دقیقه
+      less_than_x_minutes:
+        one: کمتر از یک دقیقه
+        other: کمتر از %{count} دقیقه
+      less_than_x_seconds:
+        one: یک ثانیه
+        other: کمتر  از %{count} ثانیه
+      over_x_years:
+        one: بیش از یک سال
+        other: بیش از %{count} سال
+      x_days:
+        one: یک روز
+        other: ! '%{count} روز'
+      x_minutes:
+        one: یک دقیقه
+        other: ! '%{count} دقیقه'
+      x_months:
+        one: یک ماه
+        other: ! '%{count} ماه'
+      x_seconds:
+        one: یک ثانیه
+        other: ! '%{count} ثانیه'
+    prompts:
+      day: روز
+      hour: ساعت
+      minute: دقیقه
+      month: ماه
+      second: ثانیه
+      year: سال
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: باید پذیرفته شود
+      blank: نباید خالی باشد
+      confirmation: با تایید نمی‌خواند
+      empty: نمی‌تواند خالی باشد
+      equal_to: باید برابر %{count} باشد
+      even: باید زوج باشد
+      exclusion: رزرو است
+      greater_than: باید بزرگتر از %{count} باشد
+      greater_than_or_equal_to: باید بزرگتر یا برابر %{count} باشد
+      inclusion: در لیست موجود نیست
+      invalid: نامعتبر است
+      less_than: باید کمتر از %{count} باشد
+      less_than_or_equal_to: باید کمتر یا برابر %{count} باشد
+      not_a_number: عدد نیست
+      not_an_integer: عدد صحیح نیست
+      odd: باید فرد باشد
+      record_invalid: رکورد نامعتبر است %{errors}
+      taken: پیشتر گرفته شده
+      too_long: بلند است (حداکثر %{count} کاراکتر)
+      too_short: کوتاه است (حداقل %{count} کاراکتر)
+      wrong_length: نااندازه است (باید %{count} کاراکتر باشد)
+
+    template:
+      body: ! 'موارد زیر مشکل داشت:'
+      header:
+        one: 1 خطا جلوی ذخیره این %{model} را گرفت
+        other: ! '%{count} خطا جلوی ذخیره این %{model} را گرفت'
+  helpers:
+    select:
+      prompt: لطفا انتخاب کنید
+    submit:
+      create: ! 'ایجاد %{model}'
+      submit: ! 'ذخیره‌ی %{model}'
+      update: ! 'بروز رسانی %{model}'
+  number:
+    currency:
+      format:
+        delimiter: ٬
+        format: ! '%n %u'
+        precision: 0
+        separator: ٫
+        significant: false
+        strip_insignificant_zeros: false
+        unit: ﷼
+    format:
+      delimiter: ٬
+      precision: 2
+      separator: ٫
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: میلیارد
+          million: میلیون
+          quadrillion: کادریلیون
+          thousand: هزار
+          trillion: تریلیون
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: بایت
+            other: بایت
+          gb: گیگابایت
+          kb: کیلوبایت
+          mb: مگابایت
+          tb: ترابایت
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' و '
+      two_words_connector: ! ' و '
+      words_connector: ! '، '
+  time:
+    am: قبل از ظهر
+    formats:
+      default: ! '%A، %e %B %Y، ساعت %H:%M:%S (%Z)'
+      long: ! '%e %B %Y، ساعت %H:%M'
+      short: ! '%e %B، ساعت %H:%M'
+    pm: بعد از ظهر
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    models:
+        user: 'کاربر'
+    errors:
+      <<: *errors
+    attributes:
+        profile:
+            nickname: "اسم مستعار"
+            name: "نام"
+            surename: "نام خانوادگی"
+            birthdate: 'تاریخ تولد'
+            sex: 'جنسیت'
+        user:
+            email: 'ایمیل'
+            login: 'نام کاربر'
+            password: 'رمز عبور'
+            password_confirmation: 'تکرار رمز عبور'
+            remember_me: 'مرا به خاطر بسپار'
+            username: 'نام مستعار'
+            birth_year: 'سال تولد'
+            name: 'نام'
+            lastname: 'نام خانوادگی'
+
+        setting:
+            user_privacy_status: 'نوع پروفایل'
+            user_serachable_status: 'قابلیت جستجوی پروفایل'
+  home: 'خانه'
+  submit: 'ثبت'
+  please_enter_your_profile_data: 'لطفا اطلاعات پروفایل خود را وارد نمایید'
+  profile: 'پروفایل'
+  followers: 'دنبال کنندگان'
+  followees: 'دنبال شوندگان'
+  activities: 'فعالیت ها'
+  about_me: 'درباره من'
+  add_as_a_friend: 'دنبال کن!'
+  remove_as_a_friend: 'دنبال نکن'
+  friend_added: 'شما اکنون دنبال کننده این کاربر هستید'
+  friend_removed: 'شما دیگر دنبال کننده این  کاربر نیستید'
+  list_of_users_followed_by_this_user: 'لیست افرادی که این کاربر آن ها را دنبال می کند'
+  list_of_followers_of_this_user: 'لیست کسانی که این کاربر را دنبال می کنند'
+  send_a_message: 'پیام خصوصی'
+  send_private_message: 'ارسال پیام خصوصی'
+  send: 'ارسال'
+  message_sent: 'پیام با موفقیت ارسال شد'
+  skills_and_intresets: 'علاقه مندی ها'
+  avatar: 'عکس پروفایل'
+  settings: 'تنظیمات'
+  for_edit_click_pen_tab: 'برای ویرایش بر روی آیکون زیر کلیک کنید'
+  submit_suggestion: 'ثبت پیشنهاد'          
+  select_crop_area: 'قسمت مورد نظر را انتخاب کنید'
+  uploading: 'در حال بار گذاری ...'
+  updated: 'بروزرسانی انجام شد.'
+  edit: 'ویرایش'
+  current_value: 'مقدار فعلی'
+  skill_subject: 'موضوع مورد علاقه'
+  skill_level: 'میزان علاقه'
+  subject: 'موضوع'
+  operations: 'عملیات'
+  add_new_skill: 'افزودن علاقه مندی جدید'
+  back: 'بازگشت'
+  sign_up: 'ثبت نام'
+  welcome: 'خوش آمدید'
+  logout: 'خروج'
+  settings: 'تنظیمات'
+  sign_in: 'ورود'
+  registeration: 'روند ثبت نام'
+  compelete_profile: 'تکمیل پروفایل'
+  ulpoad_avatar: 'بارگذاری عکس'
+  enter_your_sign_up_data: 'اطلاعات ثبت نام را وارد کنید'
+  enter_your_skills: 'زمینه های مورد علاقه خود را وارد کنید'
+  skills: 'زمینه های مورد علاقه'
+  choose_file: 'انتخاب فایل'
+  confirm_and_proceed: 'تایید و ادامه'
+  finish: 'پایان'
+  comments: 'نظرات'
+  has_commented_on_your_suggesion: 'ابراز نظر کرد بر روی پیشنهاد'
+  has_favourited_on_your_suggesion: 'ابراز علاقه کرده به'
+  suggestion: 'پیشنهاد'
+  notifications: 'آگاهسازی'
+  favourited_user_list: 'کاربرانی که ابراز علاقه کرده اند'
+  search: 'جستجو...'
+  feed_on: 'بر روی'
+  forgot_your_password_?: 'رمز عبور خود را فراموش کرده اید؟'
+  send_me_reset_password_instructions: 'روش بازیابی رمز را برایم ارسال کن'
+  see_all_notifications: 'مشاهده همه آگاهسازی ها'
+  replay_to_this_message: 'پاسخ به این پیام'
+  inbox: 'پیام های دریافتی'
+  unread_messages: 'پیام خوانده نشده'
+  messages: 'پیام های خصوصی'
+  see_all_messages: 'مشاهده همه پیام ها'
+  sent: 'پیام های ارسالی'
+  i_suggest_that: 'پیشنهاد می کنم که :'
+  open: 'باز'
+  closed: 'بسته'
+  searchable: 'قابل جستجو'
+  nonsearchable: 'غیر قابل جستجو'
+  this_profile_is_locked: 'این کاربر اطلاعات پروفایل خود را بسته است.'
+  frindship_notify: 'آگاهسازی تعاملات'
+  just_followed_you: 'شما را دنبال می کند'
+  just_requested_to_follow_you: 'درخواست دنبال کردن'
+  see_all_friendships: 'مشاهده همه'
+  suggestions: 'پیشنهادات'
+  people: 'افراد'
+  latest_suggestion: 'پیشنهاد اخیر'
+  day: 'روز'
+  month: 'ماه'
+  year: 'سال'
+  male: 'مرد'
+  female: 'زن'
+  curren_password: 'پسورد فعلی'
+  devise:
+    confirmations:
+      confirmed: حسابتان با موفقیت تایید شد. هم اکنون وارد شدید.
+      send_instructions: ظرف چند دقیقه آینده ایمیلی حاوی راهنمای تایید حسابتان دریافت خواهید کرد.
+      send_paranoid_instructions: اگر ایمیل شما قبلا در سیستم ثبت شده باشد، تا چند دقیقه‌ی دیگر یک ایمیل حاوی توضیحات چگونگی فعال‌سازی حساب‌تان دریافت می‌کنید.
+    failure:
+      already_authenticated: وارد سیستم هستید.
+      inactive: حساب شما هنوز فعال نشده است.
+      invalid: ایمیل یا رمز عبور غیر معتبر.
+      last_attempt: شما تنها یک فرصت دیگر دارید قبل از این‎که حسابتان غیرفعال شود.
+      locked: حسابتان قفل شده است.
+      not_found_in_database: ایمیل یا رمزعبور نامعتبر.
+      timeout: نشست شما منقضی شده است. برای ادامه دوباره وارد شوید.
+      unauthenticated: پیش از ادامه باید وارد شوید یا ثبت نام کنید.
+      unconfirmed: باید حسابتان را قبل از ادامه تایید کنید.
+    mailer:
+      confirmation_instructions:
+        subject: راهنمای تایید
+      reset_password_instructions:
+        subject: راهنمای بازنشانی رمز عبور
+      unlock_instructions:
+        subject: راهنمای باز کردن
+    omniauth_callbacks:
+      failure: امکان استفاده از مجوز %{kind} نبود زیرا "%{reason}".
+      success: با موفقیت مجوز استفاده از  %{kind} دریافت شد.
+    passwords:
+      no_token: شما نمی‌توانید بدون استفاده از یک لینک بازنشانی رمز به این صفحه دسترسی پیدا کنید. اگر از طریق یک ایمیل بازنشانی رمز عبور به این صفحه رسیده‌اید، مطمئن شوید که از کل URL فرستاده شده استفاده کرده‌اید.
+      send_instructions: ظرف چند دقیقه آینده ایمیلی حاوی راهنمای بازگرداندن رمز عبورتان دریافت خواهید کرد.
+      send_paranoid_instructions: اگر ایمیل شما قبلا در سیستم ثبت شده باشد، تا چند دقیقه‌ی دیگر یک لینک بازنشانی رمز عبور دریافت می‌کنید.
+      updated: رمز عبورتان با موفقیت تغییر کرد. اکنون وارد شدید.
+      updated_not_active: رمز عبور با موفقیت تغییر یافت.
+    password:
+      must_include_at_least_one_lowercase_letter,_one_uppercase_letter,_and_one_digit: باید حتما شامل حداقل یک حرف بزرگ, یک حرف کوچک و رقم باشد.
+    registrations:
+      destroyed: بدرود! حسابتان لغو شد. به امید دیدار دوباره.
+      signed_up: خوش آمدید! با موفقیت ثبت نام کردید.
+      signed_up_but_inactive: شما با موفقیت ثبت نام شده اید؛ ولی هنوز نمی‌توانید وارد شوید چون حساب‌تان هنوز فعال نشده.
+      signed_up_but_locked: شما با موفقیت ثبت نام شده اید؛ ولی هنوز نمی‌توانید وارد شوید چون حساب‌تان قفل شده.
+      signed_up_but_unconfirmed: یک ایمیل حاوی لینک تایید حساب برای شما فرستاده شده. لطفا برای فعال کردن حساب‌تان آن لینک را باز کنید.
+      update_needs_confirmation: حساب شما با موفقیت به روز شد، اما شما باید ایمیل جدیدتان را را تایید کنید. لطفا ایمیل‌تان را چک کنید و روی لینک تایید حساب کاربری کلیک کنید تا ایمیل جدیدتان تایید شود.
+      updated: به روز رسانی حسابتان با موفقیت انجام شد.
+    sessions:
+      signed_in: ورود موفق.
+      signed_out: خروج موفق.
+    unlocks:
+      send_instructions: ایمیلی حاوی راهنمای باز کردن حسابتان در چند دقیقه آینده به شما ارسال خواهد شد.
+      send_paranoid_instructions: اگر حساب شما وجود داشته باشد، تا چند دقیقه‌ی دیگر یک ایمیل حاوی توضیحات نحوه‌ی باز کردن قفل حساب‌تان برای شما ارسال می‌شود.
+      unlocked: حسابتان با موفقیت باز شد. اکنون وارد شدید.
+    invalid_captcha: عبارت تصادفی را درست وارد نکرده اید.
+  errors:
+    messages:
+      already_confirmed: قبلا تایید شده است
+      confirmation_period_expired: باید در مدت %{period} تایید می‌شد، لطفا یکی دیگر درخواست نمایید
+      expired: منقضی شده. لطفا یکی دیگر درخواست کنید.
+      not_found: یافت نشد
+      not_locked: قفل نشده است
+      not_saved:
+        one: '۱ خطا جلوی ذخیره %{resource} را گرفت:'
+        other: '%{count} خطا جلوی ذخیره این %{resource} را گرفت:'

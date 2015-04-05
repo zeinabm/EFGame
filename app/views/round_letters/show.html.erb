@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @round_letter.game_id %>
+</p>
+
+<p>
+  <strong>Letter:</strong>
+  <%= @round_letter.letter %>
+</p>
+
+<%= link_to 'Edit', edit_round_letter_path(@round_letter) %> |
+<%= link_to 'Back', round_letters_path %>

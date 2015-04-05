@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @game_roster.game_id %>
+</p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @game_roster.player.username %>
+</p>
+<table class="table table-bordered">
+    <tbody>
+		<thead>
+			<% @items.each do |item| %>
+			<td><%= item.name %> </td>
+			<% end %>
+		</thead>
+        <tr>
+			<% @items.each do |item| %>
+			<td style=" padding:0;"> <input type="text" class="form-control no-border MyClass" /></td>
+			<% end %>
+        </tr>
+    </tbody>
+</table>
+<input disabled type="submit" value="استپ" id="Submit" onClick="alert('Form submitted');">
+<%= link_to 'Edit', edit_game_roster_path(@game_roster) %> |
+<%= link_to 'Back', game_rosters_path %>
+
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+	
+	var toValidate = jQuery('.table .MyClass'), valid = false;
+	toValidate.keyup(function () {
+    	if (jQuery(this).val().length > 0) {
+        	jQuery(this).data('valid', true);
+    	} else {
+        	jQuery(this).data('valid', false);
+    	}
+		valid = true;
+    	toValidate.each(function () {
+        	if (jQuery(this).data('valid') == undefined) {
+            	valid = false;
+        	} 
+			if (jQuery(this).data('valid') == false) {
+            	valid = false;
+        	} 
+    	});
+    	if (valid === true) {
+        	jQuery("#Submit").prop('disabled', false);
+    	} else {
+        	jQuery("#Submit").prop('disabled', true);
+    	}
+	});
+	var counter = 0;
+	var interval = setInterval(function() {
+	    counter++;
+	    if (counter == 90) {
+			jQuery("#Submit").prop('disabled', false);
+			toValidate = $('');
+	    }
+	}, 1000);
+});
+
+</script> 

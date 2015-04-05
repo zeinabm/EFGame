@@ -1,0 +1,29 @@
+<h1>Listing round_letters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Game</th>
+      <th>Letter</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @round_letters.each do |round_letter| %>
+      <tr>
+        <td><%= round_letter.game_id %></td>
+        <td><%= round_letter.letter %></td>
+        <td><%= link_to 'Show', round_letter %></td>
+        <td><%= link_to 'Edit', edit_round_letter_path(round_letter) %></td>
+        <td><%= link_to 'Destroy', round_letter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Round letter', new_round_letter_path %>

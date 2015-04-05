@@ -1,0 +1,25 @@
+<%= form_for(@round_letter) do |f| %>
+  <% if @round_letter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@round_letter.errors.count, "error") %> prohibited this round_letter from being saved:</h2>
+
+      <ul>
+      <% @round_letter.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :game_id %><br>
+    <%= f.number_field :game_id %>
+  </div>
+  <div class="field">
+    <%= f.label :letter %><br>
+    <%= f.text_field :letter %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
