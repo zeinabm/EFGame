@@ -1,26 +1,38 @@
 Efgame::Application.routes.draw do
 
+<<<<<<< HEAD
 
 
 
  HEAD
   resources :round_letters
 
+=======
+>>>>>>> 113efc876576f3b109de6fdafecaa8292ff74f9b
   resources :game_rosters
 
   resources :games
 
+<<<<<<< HEAD
   resources :profiles
   captcha_route
 
 
+=======
+
+  resources :profiles
+>>>>>>> 113efc876576f3b109de6fdafecaa8292ff74f9b
 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+<<<<<<< HEAD
   # root 'welcome#index'
+=======
+  root 'profiles#show'
+>>>>>>> 113efc876576f3b109de6fdafecaa8292ff74f9b
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -73,6 +85,7 @@ Efgame::Application.routes.draw do
 
 
   devise_for :users, :controllers => { registrations: 'registrations' }
+<<<<<<< HEAD
   devise_scope :user do
   authenticated :user do
     root 'profiles#show', as: :authenticated_root
@@ -82,4 +95,6 @@ Efgame::Application.routes.draw do
     root 'devise/sessions#new', as: :unauthenticated_root
   end
 end
+=======
+>>>>>>> 113efc876576f3b109de6fdafecaa8292ff74f9b
 end
