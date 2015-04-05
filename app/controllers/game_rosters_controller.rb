@@ -25,6 +25,10 @@ class GameRostersController < ApplicationController
     @game = Game.find(params[:game_id])
     if game_is_full?
       redirect_to @game, notice: 'ظرفیت این بازی تکمیل است'
+    elsif @game.players.find(current_user.id) and game_is_starting? 
+      flash[:notice] = 'شما قبلا به این بازی پیوسته اید و بازی شروع شده است.'
+      @game_roster = GameRoster.where(:player_id => current_user.id, :game_id => @game.id).first
+      redirect_to @game_roster
     else
       @game_roster = @game.game_rosters.new()
       @game_roster.player = current_user
