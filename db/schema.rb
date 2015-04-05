@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150405040006) do
+=======
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20150405040006) do
+=======
+ActiveRecord::Schema.define(version: 20150305190336) do
+>>>>>>> 113efc876576f3b109de6fdafecaa8292ff74f9b
+>>>>>>> 4aa0ac8638433635edc71afa69898353da37d232
 
   create_table "Games_Users", id: false, force: true do |t|
     t.integer "game_id", null: false
@@ -33,6 +41,10 @@ ActiveRecord::Schema.define(version: 20150405040006) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4aa0ac8638433635edc71afa69898353da37d232
   create_table "items", force: true do |t|
     t.text     "name"
     t.datetime "created_at"
@@ -46,6 +58,11 @@ ActiveRecord::Schema.define(version: 20150405040006) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 113efc876576f3b109de6fdafecaa8292ff74f9b
+>>>>>>> 4aa0ac8638433635edc71afa69898353da37d232
   create_table "simple_captcha_data", force: true do |t|
     t.string   "key",        limit: 40
     t.string   "value",      limit: 6
