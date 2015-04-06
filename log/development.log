@@ -66519,3 +66519,2360 @@ ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min
   Rendered /home/shabnam/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.0ms)
 =======
 >>>>>>> 4aa0ac8638433635edc71afa69898353da37d232
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 149ms (Views: 133.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:39:22 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.4ms)
+
+
+Started GET "/assets/BMitra.woff" for 127.0.0.1 at 2015-04-06 06:39:23 +0430
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:39:24 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:39:31 +0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/n4R61y9qTkMmwe13QpN1Q64VMKNe/+ztE3iqQBmNCk=", "user"=>{"username"=>"fgh", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'fgh' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 401 Unauthorized in 90ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:39:31 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:31 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:31 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:39:32 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (48.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-06 06:39:54 +0430
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1428286194" for 127.0.0.1 at 2015-04-06 06:39:54 +0430
+Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1428286194"}
+  Rendered text template (0.1ms)
+Sent data  (2.8ms)
+Completed 200 OK in 105ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (12.8ms)[0m  [1mDELETE FROM "users"[0m
+  [1m[35mSQL (12.9ms)[0m  DELETE FROM "games"
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-06 06:41:46 +0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/n4R61y9qTkMmwe13QpN1Q64VMKNe/+ztE3iqQBmNCk=", "user"=>{"lastname"=>"قنادی", "name"=>"فاطمه", "username"=>"fatemeh", "email"=>"fateme.ghanadi@gmail.com", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "birth_day"=>"1", "birth_month"=>"1", "birth_year"=>"1301"}, "captcha"=>"yhlxhk", "commit"=>"ثبت نام"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'fateme.ghanadi@gmail.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" = 'fatemeh' LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '0849623a8320b7442ed2067c827f11bac4c268e1a86a32f66444c839cbf088be' ORDER BY "users"."id" ASC LIMIT 1[0m
+Binary data inserted for `string` type on column `confirmation_token`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "users" ("birth_day", "birth_month", "birth_year", "confirmation_sent_at", "confirmation_token", "created_at", "email", "encrypted_password", "lastname", "name", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["birth_day", 1], ["birth_month", 1], ["birth_year", 1301], ["confirmation_sent_at", Mon, 06 Apr 2015 02:11:46 UTC +00:00], ["confirmation_token", "0849623a8320b7442ed2067c827f11bac4c268e1a86a32f66444c839cbf088be"], ["created_at", Mon, 06 Apr 2015 02:11:46 UTC +00:00], ["email", "fateme.ghanadi@gmail.com"], ["encrypted_password", "$2a$10$nGuALcWjTM0wiQVI/t1Ll.3pQHGfRmZcH5FvZFXGK3q4Kk.jguFO."], ["lastname", "قنادی"], ["name", "فاطمه"], ["updated_at", Mon, 06 Apr 2015 02:11:46 UTC +00:00], ["username", "fatemeh"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.7ms)
+
+Sent mail to fateme.ghanadi@gmail.com (12804.2ms)
+Date: Mon, 06 Apr 2015 06:41:47 +0430
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: fateme.ghanadi@gmail.com
+Message-ID: <5521eb6311478_c272111104857dd@fatemeh-SVP13212SGBI.mail>
+Subject: =?UTF-8?Q?=D8=B1=D8=A7=D9=87=D9=86=D9=85=D8=A7=DB=8C?=
+ =?UTF-8?Q?_=D8=AA=D8=A7=DB=8C=DB=8C=D8=AF?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fateme.ghanadi@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=dZskGdZY7aqxKHPsynVe">Confirm my account</a></p>
+
+  [1m[36m (7.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13407ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:41:59 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 79ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:42:00 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.2ms)
+
+
+Started GET "/users/confirmation?confirmation_token=dZskGdZY7aqxKHPsynVe" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"dZskGdZY7aqxKHPsynVe"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '0849623a8320b7442ed2067c827f11bac4c268e1a86a32f66444c839cbf088be' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "confirmation_token" = ?, "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = 11  [["confirmation_token", nil], ["confirmed_at", Mon, 06 Apr 2015 02:12:12 UTC +00:00], ["updated_at", Mon, 06 Apr 2015 02:12:12 UTC +00:00]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 20ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:42:12 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/n4R61y9qTkMmwe13QpN1Q64VMKNe/+ztE3iqQBmNCk=", "user"=>{"username"=>"fateme", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'fateme' ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/n4R61y9qTkMmwe13QpN1Q64VMKNe/+ztE3iqQBmNCk=", "user"=>{"username"=>"fateme", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 98ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:42:35 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/n4R61y9qTkMmwe13QpN1Q64VMKNe/+ztE3iqQBmNCk=", "user"=>{"username"=>"fatemeh", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'fatemeh' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 11[0m  [["last_sign_in_at", Mon, 06 Apr 2015 02:12:45 UTC +00:00], ["current_sign_in_at", Mon, 06 Apr 2015 02:12:45 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Mon, 06 Apr 2015 02:12:45 UTC +00:00]]
+  [1m[35m (7.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 104ms (ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 11 ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by ProfilesController#show as HTML
+  Rendered profiles/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:42:45 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.7ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (28.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Rg1t1qlUbZHr68864lY8TdcECjoaQ5brfYCYYdorLyk="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 11 ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:43:05 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.2ms)
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 119ms (Views: 93.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:43:47 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p1pz4HtmXTlYJDgjWxcTDnekICqTgp+/2HH3RDsFBPc=", "user"=>{"username"=>"fatemeh", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p1pz4HtmXTlYJDgjWxcTDnekICqTgp+/2HH3RDsFBPc=", "user"=>{"username"=>"fatemeh", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:43:54 +0430
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p1pz4HtmXTlYJDgjWxcTDnekICqTgp+/2HH3RDsFBPc=", "user"=>{"username"=>"fatemeh", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'fatemeh' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 11  [["current_sign_in_at", Mon, 06 Apr 2015 02:14:01 UTC +00:00], ["sign_in_count", 2], ["updated_at", Mon, 06 Apr 2015 02:14:01 UTC +00:00]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 113ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 11 ORDER BY "users"."id" ASC LIMIT 1
+Processing by ProfilesController#show as HTML
+  Rendered profiles/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:44:01 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/8moZbV5K5BBscqDqybrb1IVBelW6SPJwySN0rT5TZk="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 11 ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:44:04 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.6ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-06 06:44:07 +0430
+Processing by RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/captcha?i=1428286447" for 127.0.0.1 at 2015-04-06 06:44:07 +0430
+Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1428286447"}
+  Rendered text template (0.0ms)
+Sent data  (1.9ms)
+Completed 200 OK in 97ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/aHU/uRGSZZ2OcWAKqNVuzh/nJWgOYiJsj1ff9Idw=", "user"=>{"lastname"=>"Gh", "name"=>"fgh", "username"=>"fatemeh", "email"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "birth_day"=>"", "birth_month"=>"", "birth_year"=>""}, "captcha"=>"", "commit"=>"ثبت نام"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.1ms)
+
+
+Started GET "/captcha?i=1428286460" for 127.0.0.1 at 2015-04-06 06:44:20 +0430
+Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1428286460"}
+  Rendered text template (0.0ms)
+Sent data  (0.9ms)
+Completed 200 OK in 102ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/aHU/uRGSZZ2OcWAKqNVuzh/nJWgOYiJsj1ff9Idw=", "user"=>{"lastname"=>"Gh", "name"=>"fgh", "username"=>"fatemeh", "email"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "birth_day"=>"", "birth_month"=>"", "birth_year"=>""}, "captcha"=>"6lqts4", "commit"=>"ثبت نام"}
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 26ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.3ms)
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+
+
+Started GET "/captcha?i=1428286472" for 127.0.0.1 at 2015-04-06 06:44:32 +0430
+Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1428286472"}
+  Rendered text template (0.0ms)
+Sent data  (0.5ms)
+Completed 200 OK in 102ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/aHU/uRGSZZ2OcWAKqNVuzh/nJWgOYiJsj1ff9Idw=", "user"=>{"lastname"=>"Gh", "name"=>"fgh", "username"=>"fatemeh", "email"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "birth_day"=>"", "birth_month"=>"", "birth_year"=>""}, "captcha"=>"trua24", "commit"=>"ثبت نام"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'fatemeh' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 43ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/captcha?i=1428286483" for 127.0.0.1 at 2015-04-06 06:44:43 +0430
+Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1428286483"}
+  Rendered text template (0.0ms)
+Sent data  (0.7ms)
+Completed 200 OK in 80ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/aHU/uRGSZZ2OcWAKqNVuzh/nJWgOYiJsj1ff9Idw=", "user"=>{"lastname"=>"Gh", "name"=>"fgh", "username"=>"fatemeh", "email"=>"fateme.ghanadi@ut.ac.ir", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "birth_day"=>"1", "birth_month"=>"1", "birth_year"=>"1301"}, "captcha"=>"a33lt6", "commit"=>"ثبت نام"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'fateme.ghanadi@ut.ac.ir' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'fatemeh' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 114ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (25.1ms)
+
+
+Started GET "/captcha?i=1428286537" for 127.0.0.1 at 2015-04-06 06:45:37 +0430
+Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1428286537"}
+  Rendered text template (0.1ms)
+Sent data  (0.8ms)
+Completed 200 OK in 111ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-06 06:46:12 +0430
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/aHU/uRGSZZ2OcWAKqNVuzh/nJWgOYiJsj1ff9Idw=", "user"=>{"lastname"=>"Gh", "name"=>"salam", "username"=>"salam", "email"=>"fateme.ghanadi@ut.ac.ir", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "birth_day"=>"2", "birth_month"=>"2", "birth_year"=>"1300"}, "captcha"=>"ysu5sex", "commit"=>"ثبت نام"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 106ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.1ms)
+
+
+Started GET "/captcha?i=1428286573" for 127.0.0.1 at 2015-04-06 06:46:13 +0430
+Processing by EasyCaptcha::Controller#captcha as HTML
+  Parameters: {"i"=>"1428286573"}
+  Rendered text template (0.0ms)
+Sent data  (0.9ms)
+Completed 200 OK in 105ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-06 06:46:35 +0430
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/aHU/uRGSZZ2OcWAKqNVuzh/nJWgOYiJsj1ff9Idw=", "user"=>{"lastname"=>"Gh", "name"=>"salam", "username"=>"salam", "email"=>"fateme.ghanadi@ut.ac.ir", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "birth_day"=>"2", "birth_month"=>"2", "birth_year"=>"1300"}, "captcha"=>"jftkmr", "commit"=>"ثبت نام"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."email" = 'fateme.ghanadi@ut.ac.ir' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'salam' LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '7e6a61bf277ff01d092eee297a7a16d24921b03a7b199073b5189e3ec8c6fc15' ORDER BY "users"."id" ASC LIMIT 1
+Binary data inserted for `string` type on column `confirmation_token`
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("birth_day", "birth_month", "birth_year", "confirmation_sent_at", "confirmation_token", "created_at", "email", "encrypted_password", "lastname", "name", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["birth_day", 2], ["birth_month", 2], ["birth_year", 1300], ["confirmation_sent_at", Mon, 06 Apr 2015 02:16:35 UTC +00:00], ["confirmation_token", "7e6a61bf277ff01d092eee297a7a16d24921b03a7b199073b5189e3ec8c6fc15"], ["created_at", Mon, 06 Apr 2015 02:16:35 UTC +00:00], ["email", "fateme.ghanadi@ut.ac.ir"], ["encrypted_password", "$2a$10$b8c9CbkD/bhqXrgmps/UH.jODyi0ufFjQOImfMSklNOiy.bTX5him"], ["lastname", "Gh"], ["name", "salam"], ["updated_at", Mon, 06 Apr 2015 02:16:35 UTC +00:00], ["username", "salam"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (0.8ms)
+
+Sent mail to fateme.ghanadi@ut.ac.ir (5341.9ms)
+Date: Mon, 06 Apr 2015 06:46:35 +0430
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: fateme.ghanadi@ut.ac.ir
+Message-ID: <5521ec838e27f_cb41acdf906952@fatemeh-SVP13212SGBI.mail>
+Subject: =?UTF-8?Q?=D8=B1=D8=A7=D9=87=D9=86=D9=85=D8=A7=DB=8C?=
+ =?UTF-8?Q?_=D8=AA=D8=A7=DB=8C=DB=8C=D8=AF?=
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome fateme.ghanadi@ut.ac.ir!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=g57CmJYxg1gsr3U7oHxX">Confirm my account</a></p>
+
+  [1m[35m (10.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5859ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:46:40 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:46:41 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/users/confirmation?confirmation_token=g57CmJYxg1gsr3U7oHxX" for 127.0.0.1 at 2015-04-06 06:47:07 +0430
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"g57CmJYxg1gsr3U7oHxX"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = '7e6a61bf277ff01d092eee297a7a16d24921b03a7b199073b5189e3ec8c6fc15' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "confirmation_token" = ?, "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = 12[0m  [["confirmation_token", nil], ["confirmed_at", Mon, 06 Apr 2015 02:17:07 UTC +00:00], ["updated_at", Mon, 06 Apr 2015 02:17:07 UTC +00:00]]
+  [1m[35m (10.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 16ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:47:07 +0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:47:08 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.9ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/aHU/uRGSZZ2OcWAKqNVuzh/nJWgOYiJsj1ff9Idw=", "user"=>{"username"=>"salam", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ورود"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."username" = 'salam' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 12[0m  [["last_sign_in_at", Mon, 06 Apr 2015 02:17:17 UTC +00:00], ["current_sign_in_at", Mon, 06 Apr 2015 02:17:17 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Mon, 06 Apr 2015 02:17:17 UTC +00:00]]
+  [1m[35m (7.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 102ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 12 ORDER BY "users"."id" ASC LIMIT 1[0m
+Processing by ProfilesController#show as HTML
+  Rendered profiles/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/profiles.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/user.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/round_letters.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/font.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/ie/v9.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/round_letters.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/style-narrow.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/style-narrower.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/style-normal.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/style-wide.css?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/game_rosters.js?body=1" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-04-06 06:47:17 +0430
+
+ActionController::RoutingError (No route matches [GET] "/assets/font-awesome.min.css"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/fatemeh/.rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/fatemeh/.rvm/gems/ruby-2.1.5/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (24.8ms)
