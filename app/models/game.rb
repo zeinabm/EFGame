@@ -4,5 +4,4 @@ class Game < ActiveRecord::Base
   has_many :players, through: :game_rosters, :source => :player
   has_many :round_letters
   has_many :round_letters
-  #has_and_belongs_to_many :players, :class_name => "User"
 end

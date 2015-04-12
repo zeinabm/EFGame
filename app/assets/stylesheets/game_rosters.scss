@@ -1,0 +1,29 @@
+$violet: #905B90;
+.game-rosters {
+	margin-top: 135px;
+	width: 58%;
+	direction: rtl;	
+	margin-left: 21%;	
+	table {
+		
+		color: rgb(88, 40, 132);;
+		tbody td {
+			line-height: 60px;
+		}
+		thead td {
+			text-align: center;
+			border-bottom: 2px $violet solid;
+			border-left: 2px $violet solid;
+		}
+		td {
+			border-left: 2px $violet solid;
+		}
+		td:last-child {
+			border-left: 0;
+		}
+		input {
+			border: 0;
+		}
+	}
+	
+}
