@@ -1,0 +1,16 @@
+                <table class="responstable">
+                  <tbody>
+
+                <tr>
+                  <th>شرکت کنندگان</th>
+
+                </tr>
+                <% @game.players.each do |player| %>
+
+                    <tr>
+                      <td><%= player.username %></td>
+                    </tr>
+                <% end %>
+
+                </tbody>
+              </table>

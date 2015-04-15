@@ -57,25 +57,10 @@
 
 
 
-                <div>
-                    <%@game.number_of_players %>
-                </div>
-                <table class="responstable">
-                  <tbody>
-
-                <tr>
-                  <th>شرکت کنندگان</th>
-
-                </tr>
-                <% @players.each do |player| %>
-
-                    <tr>
-                      <td><%= player.username %></td>
-                    </tr>
-                <% end %>
-
-                </tbody>
-              </table>
+	                <div id="players">
+						<%= render 'playerstable' %>
+					</div>
+                
 <br>
                 <footer>
                   <ul class="buttons">
