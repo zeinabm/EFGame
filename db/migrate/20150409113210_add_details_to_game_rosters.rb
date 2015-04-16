@@ -1,4 +1,4 @@
- BlueLinedPaperBackground.jpgclass AddDetailsToGameRosters < ActiveRecord::Migration
+ class AddDetailsToGameRosters < ActiveRecord::Migration
   def change
     add_column :game_rosters, :Name, :text
     add_column :game_rosters, :LastName, :text
