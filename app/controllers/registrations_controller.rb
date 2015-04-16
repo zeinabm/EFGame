@@ -43,6 +43,11 @@ class RegistrationsController < Devise::RegistrationsController
   #    render :new
   #  end
   #end
+  protected
+
+  def update_resource(resource, params)
+    resource.update_without_password(params)
+  end
 
 
   private
@@ -54,8 +59,8 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def account_update_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation,
-                                 :current_password, :birth_year, :birth_month, :birth_day, :name, :lastname)
+     params.require(:user).permit(:username, :email, :password, :password_confirmation,
+                             :birth_year, :birth_month, :birth_day, :name, :lastname)
   end
 
 
