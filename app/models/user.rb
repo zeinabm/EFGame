@@ -14,6 +14,6 @@ class User < ActiveRecord::Base
                          :with => /\A(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,20}\Z/ ,
                             :message =>  "رمز عبور باید حتما شامل حداقل یک حرف بزرگ, یک حرف کوچک و رقم باشد." ,:if => '!password.nil?'
   validates_uniqueness_of :username
-  # validates_presence_of :birth_year, :name, :lastname
+  validates_presence_of :birth_year, :name, :lastname
 
 end
