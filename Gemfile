@@ -51,3 +51,6 @@ gem 'easy_captcha'
 gem 'rmagick'
 
 gem 'devise_security_extension'
+
+gem 'private_pub'
+gem  'thin'

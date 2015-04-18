@@ -9,3 +9,10 @@
 	$('#players').html('<%= escape_javascript(render :partial => "games/playerstable") %>');
 	alert('شما با موفقیت به این بازی پیوستید ولی بازی هنوز شروع نشده است.');
 <% end %>
+
+<% publish_to "/game_rosters/new" do %>
+
+ 	 $("#players").html("<%= escape_javascript(render(:partial => 'games/playerstable' , :object => @game) )%>");
+	 $("#new_game_rosters")[0].reset();
+	 $("#players").reset();
+<% end %>

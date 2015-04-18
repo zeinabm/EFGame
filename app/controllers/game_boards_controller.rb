@@ -32,6 +32,7 @@ class GameBoardsController < ApplicationController
     
     respond_to do |format|
       if @game_board.save
+	    PrivatePub.publish_to("/game_rosters/new", game: @game)
         format.html { redirect_to @game_board, notice: 'game_board was successfully created.' }
         format.json { render action: 'show', status: :created, location: @game_board }
         format.js
