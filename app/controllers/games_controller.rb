@@ -26,13 +26,13 @@ class GamesController < ApplicationController
     @game = Game.new(game_params)
     @game.creater_id = current_user.id
     if @game.save
-      game_roster = GameRoster.new(:player_id => current_user.id, :game_id => @game.id)
-      game_roster.save
+      game_board = GameBoard.new(:player_id => current_user.id, :game_id => @game.id)
+      game_board.save
     end
     flash[:notice] = 'Game was successfully created.' if @game.save
     if game_has_started?
       flash[:notice] = 'بازی شروع شده است.'
-      redirect_to game_roster
+      redirect_to game_board
     else
       respond_with(@game)
     end

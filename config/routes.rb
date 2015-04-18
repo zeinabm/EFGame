@@ -5,7 +5,7 @@ Efgame::Application.routes.draw do
 
   resources :round_letters
 
-  resources :game_rosters
+  resources :game_boards
 
   resources :games
 

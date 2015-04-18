@@ -1,15 +1,15 @@
-<div class="game-rosters">
-<%= form_for(@game_roster) do |f| %>
+<div class="game-boards">
+<%= form_for(@game_board) do |f| %>
 	<p id="notice"><%= notice %></p>
 
 <!--	<p>
 	  <strong>Game:</strong>
-	  <%= @game_roster.game_id %>
+	  <%= @game_board.game_id %>
 	</p>
 
 	<p>
 	  <strong>Player:</strong>
-	  <%= @game_roster.player.username %>
+	  <%= @game_board.player.username %>
 	</p> -->
 	<table>
 		<thead>
@@ -33,8 +33,8 @@
 	</table>
 	<%= f.submit 'استپ', :id=>"Submit", :class=>"btn disabled" %>
 <% end %>	
-<!-- <%= link_to 'Edit', edit_game_roster_path(@game_roster) %> |
-<%= link_to 'Back', game_rosters_path %> -->
+<!-- <%= link_to 'Edit', edit_game_board_path(@game_board) %> |
+<%= link_to 'Back', game_boards_path %> -->
 </div>
 
 

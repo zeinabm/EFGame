@@ -1,0 +1,29 @@
+<h1>Listing game_boards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Game</th>
+      <th>Player</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @game_boards.each do |game_board| %>
+      <tr>
+        <td><%= game_board.game_id %></td>
+        <td><%= game_board.player_id %></td>
+        <td><%= link_to 'Show', game_board %></td>
+        <td><%= link_to 'Edit', edit_game_board_path(game_board) %></td>
+        <td><%= link_to 'Destroy', game_board, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Game roster', new_game_board_path %>

@@ -1,10 +1,10 @@
-<%= form_for(@game_roster) do |f| %>
-  <% if @game_roster.errors.any? %>
+<%= form_for(@game_board) do |f| %>
+  <% if @game_board.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@game_roster.errors.count, "error") %> prohibited this game_roster from being saved:</h2>
+      <h2><%= pluralize(@game_board.errors.count, "error") %> prohibited this game_board from being saved:</h2>
 
       <ul>
-      <% @game_roster.errors.full_messages.each do |msg| %>
+      <% @game_board.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

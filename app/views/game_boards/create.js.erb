@@ -1,7 +1,7 @@
 <% if @errors.any? %>
   
   	alert ('ظرفیت این بازی تکمیل است.');
-<% elsif @game_roster.errors.any? %>
+<% elsif @game_board.errors.any? %>
 	alert ('شما قبلا به این بازی پیوسته اید.');
 <% elsif @game_started %>
 	alert('شما با موفقیت به این بازی پیوستید و بازی شروع شده است.');
