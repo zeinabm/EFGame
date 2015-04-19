@@ -30,13 +30,13 @@ class GameBoardsController < ApplicationController
     @game_board = @game.game_boards.new()
     @game_board.player = current_user
     current_user.game_boards << @game_board
-    
+    @started_game_board = GameBoard.where(:game_id => params[:game_id], :player_id => current_user.id).first
     validate_action_create
     @game_started = true if game_is_starting?
 
     respond_to do |format|
       if @game_board.save
-	    PrivatePub.publish_to("/game_rosters/new", game: @game)
+	    # PrivatePub.publish_to("/game_rosters/new", game: @game)
         format.html { redirect_to @game_board, notice: 'game_board was successfully created.' }
         format.json { render action: 'show', status: :created, location: @game_board }
         format.js
@@ -82,10 +82,7 @@ class GameBoardsController < ApplicationController
       @errors = []
       if game_is_full?
         @errors << 'ظرفیت این بازی تکمیل است'
-      end
-      if @game.players.where(:id => current_user.id).count != 0 and game_is_starting?
-        @errors << 'شما قبلا به این بازی پیوسته اید و بازی شروع شده است.'
-      end
+      end    
     end
     
     def is_final_user?
@@ -100,5 +97,4 @@ class GameBoardsController < ApplicationController
     def game_board_params
       params.require(:game_board).permit(:game_id, :player_id)
     end
-
 end
