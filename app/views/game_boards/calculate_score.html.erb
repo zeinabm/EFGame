@@ -1,0 +1,10 @@
+<br><br><br>
+<h2>لطفا منتظر بمانید...</h2>
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+window.setInterval(function() {
+		window.location = "/games/<%= @game_board.game_id %>/calculate_score?game_board= <%= @game_board.id %>";
+    }, 3000);
+    });
+</script>

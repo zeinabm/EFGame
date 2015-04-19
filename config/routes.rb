@@ -5,9 +5,19 @@ Efgame::Application.routes.draw do
 
   resources :round_letters
 
-  resources :game_boards
+  resources :game_boards do
+    member do
+      get :calculate_score
+    end
+  end
 
-  resources :games
+
+  resources :games do
+  member do
+    get :isSubmit
+    get :calculate_score
+  end
+  end
 
   resources :profiles
   captcha_route

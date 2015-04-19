@@ -50,10 +50,29 @@ class GamesController < ApplicationController
     @game.destroy
     respond_with(@game)
   end
-
+  def isSubmit
+   
+   @submit = 0
+   @users = GameBoard.where(game_id: params[:id])
+   @users.each { |i| if i.score!="" then @submit=1 end }
+    flash[:notice] =@submit
+    render :layout => false
+    respond_with(@submit)
+  end
+  def calculate_score
+    @game = Game.find(params[:id])
+    @users = GameBoard.where(game_id: @game.id)
+    @board = params[:game_board]
+    if(@game.done === 1)
+      @game.update(number_of_rounds: @game.number_of_rounds-1 , done: 0)  
+    end
+  end
   private
     def game_has_started?
       return @game.players.count >= @game.number_of_players
+    end
+    def is_final_user?
+      return @game.players.count == @game.number_of_players
     end
     def set_game
       @game = Game.find(params[:id])

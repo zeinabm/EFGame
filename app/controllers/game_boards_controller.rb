@@ -10,12 +10,16 @@ class GameBoardsController < ApplicationController
 
   def show
     @items = Item.all
+    @game_board = GameBoard.find(params[:id])
+    @game_board.update(score: '')
     respond_with(@game_board)
   end
 
   def new
     @game_board = GameBoard.new
+
     respond_with(@game_board)
+
   end
 
   def edit
@@ -29,7 +33,7 @@ class GameBoardsController < ApplicationController
     
     validate_action_create
     @game_started = true if game_is_starting?
-    
+
     respond_to do |format|
       if @game_board.save
 	    PrivatePub.publish_to("/game_rosters/new", game: @game)
@@ -47,6 +51,18 @@ class GameBoardsController < ApplicationController
   def update
     flash[:notice] = 'GameBoard was successfully updated.' if @game_board.update(game_board_params)
     respond_with(@game_board)
+  end
+    
+  def calculate_score
+    @score =0
+    params[:game_board].each { |i| if i.at(1)!="" then @score=@score+1 end }
+    flash[:notice] = @score
+    @game_board = GameBoard.find(params[:id])
+    @game_board.update(score: @score)
+    @game = Game.find(@game_board.game_id)
+    @game.update(done: 1)
+  
+
   end
 
   def destroy
@@ -72,6 +88,11 @@ class GameBoardsController < ApplicationController
       end
     end
     
+    def is_final_user?
+      return @game.players.count == @game.number_of_players
+    end
+
+
     def set_game_board
       @game_board = GameBoard.find(params[:id])
     end
@@ -79,4 +100,5 @@ class GameBoardsController < ApplicationController
     def game_board_params
       params.require(:game_board).permit(:game_id, :player_id)
     end
+
 end

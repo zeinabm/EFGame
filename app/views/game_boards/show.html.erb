@@ -1,5 +1,6 @@
 <div class="game-boards">
-<%= form_for(@game_board) do |f| %>
+
+<%= form_for @game_board, url: {action: "calculate_score"}, html: {method: "get"} do |f| %>
 	<p id="notice"><%= notice %></p>
 
 <!--	<p>
@@ -7,11 +8,11 @@
 	  <%= @game_board.game_id %>
 	</p>
 
-	<p>
+	<p> 
 	  <strong>Player:</strong>
 	  <%= @game_board.player.username %>
 	</p> -->
-	<table>
+	<table id ="table">
 		<thead>
 			<td>نام</td>
 			<td>نام خانوادگی</td>
@@ -65,6 +66,17 @@ $(document).ready(function(){
         	jQuery("#Submit").addClass('disabled');
     	}
 	});
+
+	window.setInterval(function() {
+        $.ajax({
+            url: "/games/<%= @game_board.game_id %>/isSubmit",
+            context: document.body
+            }).done(function(res) {
+                if (res=="1"){
+                    $("#edit_game_board_<%= @game_board.id %>").submit();
+                }
+            }); 
+    }, 6000);
 });
 
 </script> 
