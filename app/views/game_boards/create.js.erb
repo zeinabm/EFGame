@@ -1,10 +1,15 @@
-<% if @errors.any? %>
-  
-  	alert ('ظرفیت این بازی تکمیل است.');
+<% if @errors.any? %> 
+  	alert ('<%=raw @errors.first %>');
+
 <% elsif @game_board.errors.any? %>
-	alert ('شما قبلا به این بازی پیوسته اید.');
+	alert ('<%=raw @game_board.errors.full_messages %>');
+
 <% elsif @game_started %>
-	alert('شما با موفقیت به این بازی پیوستید و بازی شروع شده است.');
+	<% publish_to "/#{@game_board.game_id}/join" do %>
+		window.location.href = '<%= game_board_path(@started_game_board.id) %>'; 
+	<% end %>
+	window.location.href = '<%= game_board_path(@started_game_board.id) %>'; 
+	
 <% else %>
 	$('#players').html('<%= escape_javascript(render :partial => "games/playerstable") %>');
 	alert('شما با موفقیت به این بازی پیوستید ولی بازی هنوز شروع نشده است.');
@@ -16,3 +21,5 @@
 	 $("#new_game_rosters")[0].reset();
 	 $("#players").reset();
 <% end %>
+
+
