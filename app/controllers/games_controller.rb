@@ -56,7 +56,7 @@ class GamesController < ApplicationController
    @users.each { |i| if i.score!="" then @submit=1 end }
     flash[:notice] =@submit
     render :layout => false
-    respond_with(@submit)
+
   end
   def calculate_score
     @game = Game.find(params[:id])
