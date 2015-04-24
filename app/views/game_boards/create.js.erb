@@ -5,10 +5,14 @@
 	alert ('<%=raw @game_board.errors.full_messages %>');
 
 <% elsif @game_started %>
-	<% publish_to "/#{@game_board.game_id}/join" do %>
+	<% @game_boards.each do |board| %>
+		<% publish_to "/#{board.id}/join" do %>
+			window.location.href = '<%= game_board_path(board.id) %>'; 
+		<% end %>
 		window.location.href = '<%= game_board_path(@started_game_board.id) %>'; 
 	<% end %>
-	window.location.href = '<%= game_board_path(@started_game_board.id) %>'; 
+	
+	
 	
 <% else %>
 	$('#players').html('<%= escape_javascript(render :partial => "games/playerstable") %>');

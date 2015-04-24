@@ -56,7 +56,7 @@
 </footer>
 <% if user_signed_in? %>
  	<% current_user.game_boards.each do |board|%>
-		<%= subscribe_to "/#{board.game_id}/join" %>
+		<%= subscribe_to "/#{board.id}/join" %>
 	<% end%>
 <% end %>
 </body>

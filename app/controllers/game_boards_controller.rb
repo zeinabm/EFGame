@@ -33,6 +33,7 @@ class GameBoardsController < ApplicationController
     @started_game_board = GameBoard.where(:game_id => params[:game_id], :player_id => current_user.id).first
     validate_action_create
     @game_started = true if game_is_starting?
+    @game_boards = GameBoard.where(:game_id => params[:game_id])
 
     respond_to do |format|
       if @game_board.save
