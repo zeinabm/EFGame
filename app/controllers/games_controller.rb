@@ -53,7 +53,8 @@ class GamesController < ApplicationController
    
    @submit = 0
    @users = GameBoard.where(game_id: params[:id])
-   @users.each { |i| if i.score!="" then @submit=1 end }
+   @game = Game.find(params[:id])
+    @submit = @game.done
     flash[:notice] =@submit
     render :layout => false
 
