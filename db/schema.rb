@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 20150419152003) do
     t.integer  "birth_year"
     t.string   "name"
     t.string   "lastname"
+	t.integer  "user_score"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

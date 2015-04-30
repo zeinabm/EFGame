@@ -11,7 +11,10 @@ class UsersController < ApplicationController
 
   def destroy
   end
-
+  
+  
+  def ranking
+  end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params

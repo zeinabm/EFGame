@@ -2,6 +2,7 @@ Efgame::Application.routes.draw do
 
 
 
+  get "users/ranking"
 
   resources :round_letters
 
