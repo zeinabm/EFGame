@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20150419152003) do
     t.string   "letter"
     t.datetime "created_at"
     t.datetime "updated_at"
+	t.integer  "round_number"
   end
 
   create_table "simple_captcha_data", force: true do |t|

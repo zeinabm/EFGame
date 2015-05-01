@@ -69,8 +69,30 @@ class GamesController < ApplicationController
   end
   private
     def game_has_started?
+
+		@all_letters = ["الف/آ" , "ب" , "پ" , "ت" ,"ث" , "ج" , "چ" , "ح" , "خ" , "د" , "ذ" , "ر"  , "ز" , "ژ" , "س" , "ش" , "ص" , "ض" , "ط" , "ظ" , "ع" , "غ" , "ف" , "ق" , "ک" , "گ" ,   "ل" , "م" , "ن" , "و" , "ه" , "ی" ] 
+
+		for i in 1..@game.number_of_rounds
+		  @repetitive=true
+		  if  @game.number_of_rounds > 32 then 
+			  @random_letter = @all_letters.sample
+		  else 
+			  while  @repetitive == true  do
+				@random_letter = @all_letters.sample
+				if @game.round_letters.exists?( :game_id => @game.id , :letter => 
+					@random_letter) then
+					   @repetitive =true
+				else @repetitive =false
+				 end
+			  end
+		  end
+			RoundLetter.new_round_letter(@game.id,@random_letter,i)
+		end
+		
       return @game.players.count >= @game.number_of_players
     end
+	
+	
     def is_final_user?
       return @game.players.count == @game.number_of_players
     end

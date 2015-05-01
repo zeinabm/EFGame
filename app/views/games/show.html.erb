@@ -15,48 +15,6 @@
                   <h2>بازی هنوز شروع نشده است</h2>
                 </header>
 
-
-<!-- Generate Random Letter  -->
-
-                <% 
-
-@all_letters = ["الف/آ" , "ب" , "پ" , "ت" ,"ث" , "ج" , "چ" , "ح" , "خ" , "د" , "ذ" , "ر"  , "ز" , "ژ" , "س" , "ش" , "ص" , "ض" , "ط" , "ظ" , "ع" , "غ" , "ف" , "ق" , "ک" , "گ" ,   "ل" , "م" , "ن" , "و" , "ه" , "ی" ] 
-%>
-
-
- <% 
-
-           @repetitive=true
-          if  @game.number_of_rounds > 30 then 
-                 @random_letter = @all_letters.sample
-          else 
-              while  @repetitive == true  do
-                     @random_letter = @all_letters.sample
-                  if @game.round_letters.exists?( :game_id => @game.id , :letter => 
-                    @random_letter) then
-                    @repetitive =true
-                  else @repetitive =false
-                  end
-               end
-         end
-        %>
-
-               <%= render 'generateLetter' %> 
-                
-                <%= @random_letter %>
-                <br/>
-                <% @game.round_letters.each do |round| %>
-                    <tr>
-                      <td><%= round.letter %></td>
-                      <td><%= round.game_id %></td>
-                      <br/>
-                    </tr>
-                <% end %>
-                
-<!-- generate Random Letter Finished -->
-
-
-
 	                <div id="players">
 						<%= render 'playerstable' %>
 					</div>

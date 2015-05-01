@@ -3,15 +3,31 @@
 <%= form_for @game_board, url: {action: "calculate_score"}, html: {method: "get"} do |f| %>
 	<p id="notice"><%= notice %></p>
 
-<!--	<p>
-	  <strong>Game:</strong>
-	  <%= @game_board.game_id %>
-	</p>
 
-	<p> 
-	  <strong>Player:</strong>
-	  <%= @game_board.player.username %>
-	</p> -->
+
+	
+	<% @game = Game.find(@game_board.game_id) %>
+
+		<% @game.round_letters.each do |round| %>
+		  <%  if   round.round_number == @game.number_of_rounds  then
+				@last_letter = round.letter
+			  end
+		  %>
+		<% end %>
+
+	<div class="col-md-4">
+	</div>
+	<div class="col-md-4 random_letter">
+			<%= @last_letter %>
+	</div>
+	<div class="col-md-4">
+	</div>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
 	<table id ="table">
 		<thead>
 			<td>نام</td>
