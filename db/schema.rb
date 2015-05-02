@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150419152003) do
+ActiveRecord::Schema.define(version: 20150502083604) do
 
   create_table "Games_Users", id: false, force: true do |t|
     t.integer "game_id", null: false
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20150419152003) do
     t.text     "food"
     t.text     "animal"
     t.text     "object"
-    t.integer  "score"
+    t.integer  "score",      default: 0
   end
 
   create_table "games", force: true do |t|
@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(version: 20150419152003) do
     t.integer  "birth_year"
     t.string   "name"
     t.string   "lastname"
+    t.integer  "score",                  default: 0
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

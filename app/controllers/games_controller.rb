@@ -4,11 +4,16 @@ class GamesController < ApplicationController
   respond_to :html
 
   def index
+    @deletegame = Game.where("number_of_rounds <=0 and done=0")
+    @deletegame.each { |i| gb = GameBoard.where(game_id: i.id) 
+      i.destroy
+      gb.each{|j| j.destroy}}
     @games = Game.not_started
     respond_with(@games)
   end
 
   def show
+
     @players = @game.players
     respond_with(@game)
   end
@@ -28,7 +33,7 @@ class GamesController < ApplicationController
       game_board = GameBoard.new(:player_id => current_user.id, :game_id => @game.id)
       game_board.save
     end
-    flash[:notice] = 'Game was successfully created.' if @game.save
+    flash[:notice] = 'بازی با موفقیت دخیره شد' if @game.save
     if game_has_started?
       flash[:notice] = 'بازی شروع شده است.'
       redirect_to game_board
@@ -66,6 +71,7 @@ class GamesController < ApplicationController
     if(@game.done === 1)
       @game.update(number_of_rounds: @game.number_of_rounds-1 , done: 0)  
     end
+
   end
   private
     def game_has_started?

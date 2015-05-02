@@ -43,12 +43,20 @@
 <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
 <script>
 $(document).ready(function(){
+  destroyflag = 0;
   window.setInterval(function() {
         if(<%= @game.number_of_rounds%> > 0 )
           window.location = "/game_boards/<%= @board %>/"; 
         else{
+
           alert("بازی تمام شده است.");
-          window.location ="/"
+          if(destroyflag == 3)
+          {
+           
+          }
+          destroyflag =destroyflag+1;     
+          window.location ="/";
+
         }
     }, 10000);
 });

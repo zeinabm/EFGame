@@ -11,7 +11,6 @@ class GameBoardsController < ApplicationController
   def show
     @items = Item.all
     @game_board = GameBoard.find(params[:id])
-    @game_board.update(score: '')
     respond_with(@game_board)
   end
 
@@ -29,6 +28,7 @@ class GameBoardsController < ApplicationController
     @game = Game.find(params[:game_id])
     @game_board = @game.game_boards.new()
     @game_board.player = current_user
+    @game_board.score = 0
     current_user.game_boards << @game_board
     @started_game_board = GameBoard.where(:game_id => params[:game_id], :player_id => current_user.id).first
     validate_action_create
@@ -59,9 +59,12 @@ class GameBoardsController < ApplicationController
     params[:game_board].each { |i| if i.at(1)!="" then @score=@score+1 end }
     flash[:notice] = @score
     @game_board = GameBoard.find(params[:id])
-    @game_board.update(score: @score)
+    @game_board.update(score: @score + @game_board.score)
     @game = Game.find(@game_board.game_id)
     @game.update(done: 1)
+    @user = User.find(@game_board.player_id)
+    @user.update(score: @score + @user.score)
+
   
 
   end
