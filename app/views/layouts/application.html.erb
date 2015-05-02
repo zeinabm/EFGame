@@ -19,17 +19,22 @@
                 <% end %>
               </li>
             <li><a href="../../games">خانه</a></li>
+			<li><a href="../../users/ranking">رتبه بندی افراد</a></li>
             <li><a href="../../games">بازی ها</a></li>
+               <% if user_signed_in? %>
+                    <li>  <a href="../../profile/edit">تغییر رمز عبور</a></li>
+                <% end %>            
               <li class="button special">
                 <% if user_signed_in? %>
                       <a href="../../users/edit"><%= current_user.name%></a>
+
+
                   <% else %>
                       <a href="../../users/sign_in">ورود</a>
 
                 <% end %>
               </li>
-                        
-            
+                           
 
           </ul>
         </nav>

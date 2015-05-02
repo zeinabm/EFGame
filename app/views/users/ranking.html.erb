@@ -1,0 +1,29 @@
+
+<br/>
+<br/>
+<br/>
+<div class="game-boards">
+<table id ="table">
+		<thead>
+			<td>رتبه</td>
+			<td>نام کاربری</td>
+			<td>امتیاز</td>
+			
+		</thead>
+		<tbody>	
+		 <% @rank=1 %>
+		 <% User.order(user_score: :asc).each do |u| %>
+                    <tr>
+                      <td><%= @rank       %></td>
+                      <td><%= u.username  %></td>
+                      <td><%= u.user_score %></td>
+                   	  <%   @rank = @rank+1 %>
+                      <br/>
+                    </tr>
+          <% end %>
+			
+		</tbody>	
+		
+	</table>
+
+</div>

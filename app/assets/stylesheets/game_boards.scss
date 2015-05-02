@@ -15,8 +15,9 @@ $violet: #905B90;
 			border-bottom: 2px $violet solid;
 			border-left: 2px $violet solid;
 		}
-		td {
+		tbody td {
 			border-left: 2px $violet solid;
+			text-align: center;
 		}
 		td:last-child {
 			border-left: 0;

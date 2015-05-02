@@ -1,3 +1,15 @@
 // Place all the styles related to the round_letters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.random_letter {
+	text-align: center;
+	border: 2px #A319A3 solid;
+    border-radius: 25px;
+	width :150px;
+	height:60px;
+	background:#FF19FF;
+    font-family: 'B morvarid', sans-serif;
+	font-size: 22pt;
+	color:#000000;
+}

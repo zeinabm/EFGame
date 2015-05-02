@@ -65,8 +65,6 @@ class GameBoardsController < ApplicationController
     @user = User.find(@game_board.player_id)
     @user.update(score: @score + @user.score)
 
-    
-
   end
 
   def destroy

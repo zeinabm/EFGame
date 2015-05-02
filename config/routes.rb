@@ -2,6 +2,7 @@ Efgame::Application.routes.draw do
 
 
 
+  get "users/ranking"
 
   resources :round_letters
 
@@ -19,8 +20,12 @@ Efgame::Application.routes.draw do
   end
   end
 
-  resources :profiles
-  captcha_route
+resource :profile, only: [:edit] do
+  collection do
+    patch 'update_password'
+  end
+end 
+ captcha_route
 
 
 
