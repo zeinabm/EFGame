@@ -68,8 +68,13 @@ class GameBoardsController < ApplicationController
   end
 
   def destroy
-    @game_board.destroy
-    respond_with(@game_board)
+    # if @game_board.destroy
+    #   redirect_to game_boards_path
+    # end
+     def destroy
+@game_board.destroy
+respond_with(@game_board)
+end
   end
   
   private

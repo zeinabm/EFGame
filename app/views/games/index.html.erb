@@ -25,9 +25,15 @@
                 <td><%= game.creater.username %></td>
                 <td><%= game.number_of_players %></td>
                 <td><%= game.number_of_rounds %></td>
-				<td><%= link_to game_boards_path(:game_id => game, :player_id => current_user), :remote => true, :method => :post do %>
-    پیوستن به بازی
-<% end %><td>
+                <td>
+
+                <% if GameBoard.where(:player_id => current_user.id).blank? %>
+                    <%= link_to game_boards_path(:game_id => game, :player_id => current_user), :remote => true, :method => :post do %>پیوستن به بازی<% end %>
+                <% elsif !(GameBoard.where(:player_id => current_user.id,:game_id => game.id).blank?) %>
+                    <%= link_to 'انصراف از بازی', (GameBoard.where(:player_id => current_user.id,:game_id => game.id).first), method: :delete, data: {:controller => "game_boards",  confirm: 'Are you sure?' } %>
+                <% end %>
+
+                </td>
               </tr>
           <% end %>
 
