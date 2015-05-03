@@ -72,8 +72,8 @@ class GameBoardsController < ApplicationController
     #   redirect_to game_boards_path
     # end
 @game_board.destroy
-respond_with(@game_board)
-
+# respond_with(@game_board)
+redirect_to games_path
   end
   
   private
