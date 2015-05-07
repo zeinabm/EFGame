@@ -12,11 +12,11 @@
 		</thead>
 		<tbody>	
 		 <% @rank=1 %>
-		 <% User.order(user_score: :asc).each do |u| %>
+		 <% User.order(score: :asc).each do |u| %>
                     <tr>
                       <td><%= @rank       %></td>
                       <td><%= u.username  %></td>
-                      <td><%= u.user_score %></td>
+                      <td><%= u.score %></td>
                    	  <%   @rank = @rank+1 %>
                       <br/>
                     </tr>
