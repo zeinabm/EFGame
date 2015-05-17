@@ -9,6 +9,9 @@ Efgame::Application.routes.draw do
   resources :game_boards do
     member do
       get :calculate_score
+      post :judge
+      get :judge
+      post :submit
     end
   end
 
@@ -16,7 +19,8 @@ Efgame::Application.routes.draw do
   resources :games do
   member do
     get :isSubmit
-    get :calculate_score
+    get :finish_round
+    get :wait_for_all_to_submit
   end
   end
 

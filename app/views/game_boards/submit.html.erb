@@ -4,7 +4,7 @@
 <script>
 $(document).ready(function(){
 window.setInterval(function() {
-		window.location = "/games/<%= @game_board.game_id %>/calculate_score?game_board= <%= @game_board.id %>";
-    }, 3000);
+		window.location = "/game_boards/<%= @judge_board.id%>/judge";
+    }, 2000);
     });
 </script>

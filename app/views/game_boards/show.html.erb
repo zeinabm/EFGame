@@ -1,11 +1,11 @@
 <div class="game-boards">
 
-<%= form_for @game_board, url: {action: "calculate_score"}, html: {method: "get"} do |f| %>
+<%= form_for @game_board, url: {action: "submit"}, html: {method: "post"} do |f| %>
 	<p id="notice"><%= notice %></p>
 
 
 
-	
+    <!-- this piece of code should be in controller -->
 	<% @game = Game.find(@game_board.game_id) %>
 
 		<% @game.round_letters.each do |round| %>
@@ -48,7 +48,7 @@
 			<td><%= f.text_field :object, :class=>"Class" %></td>
 		</tr>
 	</table>
-	<%= f.submit 'استپ', :id=>"Submit", :class=>"btn disabled" %>
+	<%= f.submit 'استپ', :id=>"Submit", :class=>"btn " %>
 <% end %>	
 <!-- <%= link_to 'Edit', edit_game_board_path(@game_board) %> |
 <%= link_to 'Back', game_boards_path %> -->

@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_action :set_game, only: [:show, :edit, :update, :destroy]
+  before_action :set_game, only: [:show, :edit, :update, :destroy, :finish_round, :wait_for_all_to_submit]
   before_action :authenticate_user!,  :only => [:new, :create, :edit, :update, :destroy]
   respond_to :html
 
@@ -54,28 +54,40 @@ class GamesController < ApplicationController
     @game.destroy
     respond_with(@game)
   end
-  def isSubmit
-   
-   @submit = 0
-   @users = GameBoard.where(game_id: params[:id])
-   @game = Game.find(params[:id])
+  def isSubmit   
+    @submit = 0
+    @users = GameBoard.where(game_id: params[:id])
+    @game = Game.find(params[:id])
     @submit = @game.done
     flash[:notice] =@submit
     render :layout => false
-
   end
-  def calculate_score
-    @game = Game.find(params[:id])
-    @users = GameBoard.where(game_id: @game.id)
-    @board = params[:game_board]
-    if(@game.done === 1)
-      @game.update(number_of_rounds: @game.number_of_rounds-1 , done: 0)  
+  
+  def wait_for_all_to_submit
+  end
+  
+  def finish_round
+    @boards = @game.game_boards
+    @boards.each do |board|
+      board.update(has_been_judged?: false, Name: nil, LastName: nil, City: nil, Country: nil, food: nil, animal: nil, object: nil)
     end
-
+    @board_id = current_user.game_boards.first.id
+    if(@game.done === 1)
+      @game.update(number_of_rounds: @game.number_of_rounds-1 , done: 0, went_for_judgement: 0)
+      if @game.number_of_rounds <= 0
+        players = @game.players
+        players.each do |player|
+          player.update(score: player.score + player.game_boards.first.score)
+        end
+      end
+    end
   end
+  
+  
   private
-    def game_has_started?
-
+    
+    
+    def game_has_started? #shabnam?!!
 		@all_letters = ["الف/آ" , "ب" , "پ" , "ت" ,"ث" , "ج" , "چ" , "ح" , "خ" , "د" , "ذ" , "ر"  , "ز" , "ژ" , "س" , "ش" , "ص" , "ض" , "ط" , "ظ" , "ع" , "غ" , "ف" , "ق" , "ک" , "گ" ,   "ل" , "م" , "ن" , "و" , "ه" , "ی" ] 
 
 		for i in 1..@game.number_of_rounds

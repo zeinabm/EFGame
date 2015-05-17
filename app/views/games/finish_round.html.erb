@@ -13,27 +13,21 @@
           <tbody>
 
           <tr>
-            <th>شماره بازی</th>
-            <th>شماره بازیکن</th>
+            <th>بازیکن</th>
             <th>امتیاز</th>
           </tr>
-          <% @users.each do |user| %>
+          <% @boards.each do |board| %>
 
               <tr>
-                <td><%= user.game_id%></td>
-                <td><%= user.player_id%></td>
-                <td><%= user.score%></td>
+                <td><%= board.player.username%></td>
+                <td><%= board.score%></td>
               </tr>
           <% end %>
 
           </tbody>
         </table>
         <br>
-        <footer>
-          <ul class="buttons">
-            <li><a href="/games/new" class="button">بازی جدید</a></li>
-          </ul>
-        </footer>
+
 
       </div>
       <div class="4u 12u(narrower) important(narrower)"> </div>
@@ -46,14 +40,14 @@ $(document).ready(function(){
   destroyflag = 0;
   window.setInterval(function() {
         if(<%= @game.number_of_rounds%> > 0 )
-          window.location = "/game_boards/<%= @board %>/"; 
+          window.location = "/game_boards/<%= @board_id %>/"; 
         else{
 
           alert("بازی تمام شده است.");
-          window.location ="/";
+          window.location ="/games";
 
         }
-    }, 10000);
+    }, 5000);
 });
 
 </script>

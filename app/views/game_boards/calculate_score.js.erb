@@ -1,0 +1,8 @@
+<% if @wait %>
+	window.location.href = '<%= wait_for_all_to_submit_game_path(@game) %>';
+<% else %>
+	<% publish_to "/games/#{@game.id}/show_scores" do %>
+		window.location.href = '<%= finish_round_game_path(@game) %>';
+	<% end %>
+	window.location.href = '<%= finish_round_game_path(@game) %>';
+<% end %>

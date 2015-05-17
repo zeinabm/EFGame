@@ -1,0 +1,45 @@
+<br><br><br>
+<h2>شما قضاوت کنید!</h2>
+<p> داور شما: <%= @game_board.judge_id %></p>
+<p>  بورد شما برای قضاوت: <%= current_user.judge_board.id %></p>
+
+
+<%= form_for @judge_board, url: {action: "calculate_score"}, html: {method: "get"}, :remote=>true do |f| %>
+	<p id="notice"><%= notice %></p>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+	<table>
+		<thead>
+			<td>نام</td>
+			<td>نام خانوادگی</td>
+			<td>شهر</td>
+			<td>کشور</td>
+			<td>خوراک</td>
+			<td>حیوان</td>
+			<td>اشیاء</td>
+		</thead>	
+		<tr>
+			<td><%= @judge_board.Name %>		<%= f.check_box :Name %></td>
+			<td><%= @judge_board.LastName %>	<%= f.check_box :LastName %></td>
+			<td><%= @judge_board.City %>	<%= f.check_box :City %></td>
+			<td><%= @judge_board.Country %>	<%= f.check_box :Country %></td>
+			<td><%= @judge_board.food %>	<%= f.check_box :food %></td>
+			<td><%= @judge_board.animal %>	<%= f.check_box :animal %></td>
+			<td><%= @judge_board.object %>	<%= f.check_box :object %></td>
+		</tr>
+	</table>
+	<%= f.submit 'قضاوت', :id=>"Submit" %>
+<% end %>	
+
+<!-- <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+window.setInterval(function() {
+		window.location = "/games/<%= @game_board.game_id %>/calculate_score?game_board= <%= @game_board.id %>";
+    }, 10000);
+    });
+</script> -->
