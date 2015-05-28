@@ -1,8 +1,5 @@
 class User < ActiveRecord::Base
-  before_save :default_values
-  def default_values
-    self.is_admin ||= false
-  end
+
   has_many :created_games, :class_name => "Game", :foreign_key => "creater_id"
   has_many :game_boards, :foreign_key => "player_id"
   has_many :joined_games, through: :game_boards, :source => :game

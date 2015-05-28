@@ -1,6 +1,7 @@
 Efgame::Application.routes.draw do
 
 
+  resources :news
 
   get "users/ranking"
 
