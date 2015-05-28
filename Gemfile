@@ -54,3 +54,5 @@ gem 'devise_security_extension'
 
 gem 'private_pub'
 gem  'thin'
+
+gem 'sqlite3'

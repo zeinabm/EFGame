@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+  before_save :default_values
+  def default_values
+    self.is_admin ||= false
+  end
   has_many :created_games, :class_name => "Game", :foreign_key => "creater_id"
   has_many :game_boards, :foreign_key => "player_id"
   has_many :joined_games, through: :game_boards, :source => :game
@@ -9,7 +13,7 @@ class User < ActiveRecord::Base
 
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable and :omniauthable :confirmable
-  devise :database_authenticatable, :registerable, :confirmable
+  devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
   validates_format_of :password,
                          :with => /\A(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{4,20}\Z/ ,
