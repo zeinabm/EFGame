@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 
-<p id="notice"><%= notice %></p>
+
 <br>
 
-<html>
 
-<body>
 
 
 
 <article id="main">
 
-	<header class="special container">
-		<span class="icon fa-tablet"></span>
-		<h2>                به سایت اسم فامیل آنلاین خوش آمدید                  </h2>
+
+
+	<header class="">
+		
+		<h2 style= "color:#4B5C69;text-align:center">به سایت اسم فامیل آنلاین خوش آمدید</h2>
 	</header>
 
-
-	<br><br><br><br>
-	<div class="imagewelcome">
-		<%= image_tag("esmfamil.png") %>
+	<div class="form-panel">
+		
+		<img src="/assets/esmfamil.png" width="100%">
 			<% if !current_user.nil? && current_user.is_admin %>
 <div>
 <br><br>
@@ -32,14 +31,9 @@
 <% end %>
 	</div>
 
-
 	<br><br><br>
 	<div id="x" class="modal" >
    <%= render( 'news/form' ) %>
    
 </div>
 </article>
-
-</body>
-
-</html>

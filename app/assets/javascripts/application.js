@@ -15,3 +15,4 @@
 //= require turbolinks
 //= require private_pub
 //= require_tree .
+//= require bootstrap.min

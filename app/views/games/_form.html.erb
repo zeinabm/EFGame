@@ -10,18 +10,17 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    تعداد مراحل<br>
-    <%= f.number_field :number_of_rounds %>
-  </div>
   <br>
-  <div class="field">
-    تعداد بازی کنان<br>
+  <div class="form-group">
+    <h4>تعداد مراحل</h4>
+    <%= f.number_field :number_of_rounds  %>
+  </div>
+  <div class="form-group">
+    <h4>تعداد بازی کنان</h4>
     <%= f.number_field :number_of_players %>
   </div>
   <br/><br/><br/>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+ <div class="actions">
+            <%= f.submit "ایجاد بازی", class: "btn btn-theme04 btn-lg" %>
+          </div>
 <% end %>

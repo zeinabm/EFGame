@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150502083604) do
+ActiveRecord::Schema.define(version: 20150528054950) do
 
   create_table "Games_Users", id: false, force: true do |t|
     t.integer "game_id", null: false
@@ -30,7 +30,9 @@ ActiveRecord::Schema.define(version: 20150502083604) do
     t.text     "food"
     t.text     "animal"
     t.text     "object"
-    t.integer  "score",      default: 0
+    t.integer  "score",            default: 0
+    t.integer  "judge_id"
+    t.boolean  "has_been_judged?", default: false
   end
 
   create_table "games", force: true do |t|
@@ -40,10 +42,18 @@ ActiveRecord::Schema.define(version: 20150502083604) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "done"
+    t.boolean  "went_for_judgement", default: false
   end
 
   create_table "items", force: true do |t|
     t.text     "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "news", force: true do |t|
+    t.string   "title"
+    t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -53,7 +63,7 @@ ActiveRecord::Schema.define(version: 20150502083604) do
     t.string   "letter"
     t.datetime "created_at"
     t.datetime "updated_at"
-	t.integer  "round_number"
+    t.integer  "round_number"
   end
 
   create_table "simple_captcha_data", force: true do |t|
@@ -89,7 +99,7 @@ ActiveRecord::Schema.define(version: 20150502083604) do
     t.string   "name"
     t.string   "lastname"
     t.integer  "score",                  default: 0
-	
+    t.boolean  "is_admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

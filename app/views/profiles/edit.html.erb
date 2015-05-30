@@ -1,18 +1,22 @@
 <br><br><br>
-<%= form_for(@user, :url => { :action => "update_password" } ) do |f| %>
-  <div class="field">
-    <%= f.label :'رمز عبور', "Password" %><br />
-    <%= f.password_field :password, :autocomplete => "off"  %>
+<div class="form-panel">
+    <h3 class="mb"><i class="fa fa-angle-right"></i> >> تغییر رمز عبور</h3>
+<%= form_for(@user, :url => { :action => "update_password" } ) do |f|%>
+  <div class="form-group">
+    <%= f.label :'رمز عبور', "رمز عبور جدید", :class=>"control-label" %>
+    <%= f.password_field :password, :autocomplete => "off" ,:class=>"" %>
   </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
+  <div class="form-group">
+    <%= f.label :password_confirmation , :class=>"control-label"%>
+    <%= f.password_field :password_confirmation ,:class=>""%>
   </div>
-    <div class="field">
-    <%= f.label :'پسورد فعلی' %>
-    <%= f.password_field :current_password %>
+  
+    <div class="form-group">
+    <%= f.label :'رمز عبور فعلی' , :class=>"control-label"%>
+    <%= f.password_field :current_password ,:class=>""%>
   </div>
-  <div class="action_container">
-    <%= f.submit %>
+ <div class="actions">
+            <%= f.submit "اعمال تغییرات", class: "btn btn-primary btn-lg" %>
+          </div>
   </div>
 <% end %>

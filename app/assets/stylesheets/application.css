@@ -9,7 +9,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+ *= require_tree
+ *= require bootstrap.min 
+ *= require bootstrap-rtl.min
  */
 @font-face {
     font-family: 'BMitra';
@@ -17,7 +19,7 @@
 }
 body {
     background: rgba(247, 247, 247, 0.38)!important;
-    font-family: 'BMitra', verdana, arial, helvetica, sans-serif !important;
+    font-family: 'nazanin', verdana, arial, helvetica, sans-serif !important;
     font-size: 17px!important;
 }
 .container {

@@ -1,29 +1,50 @@
+<br><br><br>
 
-<br/>
-<br/>
-<br/>
-<div class="game-boards">
-<table id ="table">
-		<thead>
-			<td>رتبه</td>
-			<td>نام کاربری</td>
-			<td>امتیاز</td>
+
+        <!-- One -->
+<div class="col-md-12">
+<section class="">
+  <div class="row 50%">
+      <div class="8u 12u(narrower)">
+      
+        <div class="content-panel">
+            <h3><i class="fa fa-angle-right"></i> >> امتیازات</h3><hr>
+                <table class="table table-striped table-advance table-hover">
+                                                        
+                    <thead>
+                              <tr>
+                                  <th>رتبه</th>
+								  <th>نام کاربری</th>
+								  <th>امتیاز</th>
 			
-		</thead>
-		<tbody>	
-		 <% @rank=1 %>
-		 <% User.order(score: :asc).each do |u| %>
-                    <tr>
-                      <td><%= @rank       %></td>
-                      <td><%= u.username  %></td>
-                      <td><%= u.score %></td>
-                   	  <%   @rank = @rank+1 %>
-                      <br/>
-                    </tr>
-          <% end %>
-			
-		</tbody>	
-		
-	</table>
+                              </tr>
+                    </thead>
+                    <tbody>
+							       <% @rank=1 %>
+									 <% User.order(score: :asc).each do |u| %>
+							                    <tr>
+							                      <td><%= @rank       %></td>
+							                      <td><%= u.username  %></td>
+							                      <td><%= u.score %></td>
+							                   	  <%   @rank = @rank+1 %>
+							                      <br/>
+							                    </tr>
+							          <% end %>
+										
+
+                                    
+                               
+
+                    </tbody>
+                </table>
+      
+         </div>
+        
+        <br>
+        </div>
+     
+      <div class="4u 12u(narrower) important(narrower)"> </div>
+  </div>
+</section>
 
 </div>
