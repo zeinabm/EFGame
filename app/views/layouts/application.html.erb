@@ -119,46 +119,22 @@
                               </div>
                             </div>
                             <!-- Second Action -->
+                        <% t=0 %>
+                            <% News.order(id: :desc).each do |u| %>
+                            <% t=t+1 %>
+                            <% if t<6 %>
                             <div class="desc">
-                      
-                                
-                              
-                              <div class="details">
-                                <p><muted>مناسبت ها</muted><br/>
-                                   <a href="/monasebat.html.erb">سه شنبه ۵ خرداد</a> <br/>
+                                  <div class="details">
+                                    <p><muted><%= u.title %></muted><br/>
+                                    <a href="#"><%= u.content %></a> <br/>
                                 </p>
                               </div>
                             </div>
+                            <% end %>
+                        <% end %>
                             <!-- Third Action -->
 
-                            <div class="desc">
-                           
-                              <div class="details"><!--in yeki bayad hadis bashe-->
-                                <p><muted>ذکر روز</muted><br/>
-                                   <a href="#">یا ارحم الراحمین</a> ۱۰۰ مرتبه<br/>
-                                </p>
-                              </div>
-                            </div>
-                            
-                            <h3>  حدیث روز</h3>
-                            <!-- Fourth Action -->
-                            <div class="desc"><!--inja bayad hadis biad-->
-                              <div class="details">
-                                <p><muted>غرر الحکم/ح 2497</muted><br/>
-                                   <a href="#">امام علی علیه السلام:</a>اتعظوا بمن کان قبلکم قبل ان یتعظ بکم من بعدکم<br/>
-                                   <p> پند بگيريد از کسي که پيش از شما بوده، قبل از آنکه پس از شما به شما پند گيرد.</p>
-                                </p>
-                              </div>
-                            </div>
-                            <!-- Fifth Action -->
-                            <div class="desc"><!--inja bayad ravayat biad-->
-                              <div class="details">
-                                <p><muted>ميزان الحكمه/ح 13825</muted><br/>
-                                   <a href="#">پيامبر صلى ‏الله ‏عليه ‏و ‏آله:</a> اجودکم من بعدي رجل علم علما فنشر علمه<br/>
-                                   <p> بخشنده‏ ترين شما پس از من، كسى است كه دانشى بياموزد، آن‏گاه دانش خود را بپراكند.</p>
-                                </p>
-                              </div>
-                            </div>
+                      
 
                               
                             
@@ -170,9 +146,8 @@
                         </div><!-- /col-lg-9 END SECTION MIDDLE --><!-- fek konam in khat nabayad 
                     </div><! --/row -->
              </section>
-          </section>
+          
           <!--main content end-->
-
 
 
         
@@ -196,7 +171,9 @@
 
 
             <%end %>
-    </section>
+  <div id="join-subscriber">
+ <%= render 'layouts/join_subscriber' %>
+</div>
 </body>
 </html>
 

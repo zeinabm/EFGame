@@ -1,7 +1,10 @@
 Efgame::Application.routes.draw do
 
 
+
+  #resources :chats
   resources :news
+
 
   get "users/ranking"
 
@@ -18,6 +21,7 @@ Efgame::Application.routes.draw do
 
 
   resources :games do
+    resources :chats
   member do
     get :isSubmit
     get :finish_round

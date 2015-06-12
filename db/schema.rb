@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150528054950) do
+ActiveRecord::Schema.define(version: 20150529214950) do
 
   create_table "Games_Users", id: false, force: true do |t|
     t.integer "game_id", null: false
     t.integer "user_id", null: false
+  end
+
+  create_table "chats", force: true do |t|
+    t.integer  "game_id"
+    t.integer  "sender_id"
+    t.string   "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "game_boards", force: true do |t|
@@ -43,6 +51,7 @@ ActiveRecord::Schema.define(version: 20150528054950) do
     t.datetime "updated_at"
     t.integer  "done"
     t.boolean  "went_for_judgement", default: false
+    t.boolean  "is_private"
   end
 
   create_table "items", force: true do |t|

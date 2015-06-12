@@ -23,7 +23,7 @@
                               </thead>
                               <tbody>
                               <% @games.each do |game| %>
-
+ 								<% if !(game.is_private ) || (current_user && game.creater_id == current_user.id )||(current_user && current_user.is_admin) %>
                                   <tr>
                                     <td><%=link_to game.id, game  %></td>
                                     <td><%= game.creater.username %></td>
@@ -40,7 +40,7 @@
                                     </td>
                                   </tr>
                               <% end %>
-
+							  <% end %>
                               </tbody>
                           </table>
       
@@ -49,7 +49,10 @@
         <br>
         <footer>
           <ul class="buttons">
-            <li><a href="/games/new" class="btn btn-theme02" style="padding:1px 9px;float:left;color:white"><h3> بازی جدید </h3></a></li>
+            <li><%= link_to new_game_path(:is_private => 0 ), :class=>"btn btn-theme02", :style=>"padding:1px 9px;float:right;color:white;margin-left:5px" do %> 
+			<h3>بازی عمومی جدید</h3> <% end %></li>   
+			<li><%= link_to new_game_path(:is_private => 1 ), :class=>"btn btn-theme02", :style=>"padding:1px 9px;float:right;color:white" do %> 
+			<h3>بازی خصوصی جدید</h3> <% end %></li>
           </ul>
         </footer>
 

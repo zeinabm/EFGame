@@ -13,6 +13,7 @@ class GameBoardsController < ApplicationController
   def show
     @items = Item.all
     @game_board = GameBoard.find(params[:id])
+    @game = @game_board.game
     respond_with(@game_board)
   end
 

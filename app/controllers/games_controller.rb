@@ -6,8 +6,9 @@ class GamesController < ApplicationController
   def index
     @deletegame = Game.where("number_of_rounds <=0 and done=0")
     @deletegame.each { |i| gb = GameBoard.where(game_id: i.id) 
-      i.destroy
-      gb.each{|j| j.destroy}}
+      gb.each{|j| j.destroy
+      }
+        i.destroy}
     @games = Game.not_started
     respond_with(@games)
   end

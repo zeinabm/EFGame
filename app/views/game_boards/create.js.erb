@@ -9,13 +9,14 @@
 		<% publish_to "/#{board.id}/join" do %>
 			window.location.href = '<%= game_board_path(board.id) %>'; 
 		<% end %>
-		window.location.href = '<%= game_board_path(@started_game_board.id) %>'; 
 	<% end %>
+			window.location.href = '<%= game_board_path(@started_game_board.id) %>'; 
 	
 	
 	
 <% else %>
 	$('#players').html('<%= escape_javascript(render :partial => "games/playerstable") %>');
+	$('#join-subscriber').html('<%= escape_javascript(render :partial => "layouts/join_subscriber") %>');
 	alert('شما با موفقیت به این بازی پیوستید ولی بازی هنوز شروع نشده است.');
 <% end %>
 

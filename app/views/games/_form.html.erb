@@ -19,6 +19,9 @@
     <h4>تعداد بازی کنان</h4>
     <%= f.number_field :number_of_players %>
   </div>
+  <div class="form-group" >
+       <%= f.hidden_field :is_private, :value => params[:is_private] %>
+  </div> 
   <br/><br/><br/>
  <div class="actions">
             <%= f.submit "ایجاد بازی", class: "btn btn-theme04 btn-lg" %>

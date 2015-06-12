@@ -1,13 +1,14 @@
 <div id="judge" class="game-boards">
 <br><br><br>
 <h2>شما قضاوت کنید!</h2>
-<!-- <p> داور شما: <%= @game_board.judge_id %></p> -->
-<!-- <p>  بورد شما برای قضاوت: <%= current_user.judge_board.id %></p> -->
+<p> داور شما: <%= @game_board.judge_id %></p>
+<p>  بورد شما برای قضاوت: <%= current_user.judge_board.id %></p>
 
 
 <%= form_for @judge_board, url: {action: "calculate_score"}, html: {method: "get"}, :remote=>true do |f| %>
 	<p id="notice"><%= notice %></p>
 
+	<br/>
 	<br/>
 	<br/>
 	<br/>
@@ -23,18 +24,21 @@
 			<td>اشیاء</td>
 		</thead>	
 		<tr>
-			<td><%= @judge_board.Name %>		<%= f.check_box :Name, 		:disabled => @judge_board.Name=="" %></td>
-			<td><%= @judge_board.LastName %>	<%= f.check_box :LastName, 	:disabled => @judge_board.LastName=="" %></td>
-			<td><%= @judge_board.City %>	<%= f.check_box :City,			:disabled => @judge_board.City==""%></td>
-			<td><%= @judge_board.Country %>	<%= f.check_box :Country, 		:disabled => @judge_board.Country=="" %></td>
-			<td><%= @judge_board.food %>	<%= f.check_box :food, 			:disabled => @judge_board.food=="" %></td>
-			<td><%= @judge_board.animal %>	<%= f.check_box :animal, 		:disabled => @judge_board.animal=="" %></td>
-			<td><%= @judge_board.object %>	<%= f.check_box :object, 		:disabled => @judge_board=="" %></td>
+			<td><%= @judge_board.Name %>		<%= f.check_box :Name, :disabled => @judge_board.Name=="" %></td>
+			<td><%= @judge_board.LastName %>	<%= f.check_box :LastName, :disabled => @judge_board.LastName=="" %></td>
+			<td><%= @judge_board.City %>	<%= f.check_box :City, :disabled => @judge_board.City=="" %></td>
+			<td><%= @judge_board.Country %>	<%= f.check_box :Country, :disabled => @judge_board.Country=="" %></td>
+			<td><%= @judge_board.food %>	<%= f.check_box :food, :disabled => @judge_board.food==""%></td>
+			<td><%= @judge_board.animal %>	<%= f.check_box :animal, :disabled => @judge_board.animal=="" %></td>
+			<td><%= @judge_board.object %>	<%= f.check_box :object, :disabled => @judge_board.object=="" %></td>
+			
 		</tr>
 	</table>
+	<%= f.check_box :judge_id, :style=>"visibility:hidden" %>
 	<%= f.submit 'قضاوت', :id=>"Submit" %>
 <% end %>	
 </div>
+
 <!-- <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
 <script>
 $(document).ready(function(){
